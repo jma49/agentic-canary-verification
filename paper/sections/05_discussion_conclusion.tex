@@ -1,0 +1,6 @@
+\section{Threats to Validity and Conclusion}
+\label{sec:conclusion}
+
+\textbf{Threats to Validity.} Our evaluation relies on a controlled 12-service, 6-region fault-injection simulation rather than live production traffic from a commercial cloud provider. We mitigate construct bias through decoupled off-graph fault cones ($50\%$--$100\%$ recall sweep), exogenous traffic-shock stress tests, strict causal shift-left gating, and 25 paired seeds with Holm-Bonferroni-adjusted Wilcoxon significance tests. Evaluating AgenticCanary on an open-source Kubernetes + OpenTelemetry Astronomy Shop deployment is our immediate next step.
+
+\textbf{Conclusion.} Shared staging environments cannot replicate production traffic or multi-region config overlays without bottlenecking release velocity. \textbf{AgenticCanary} demonstrates across \TotalSimReleases{} sealed simulated releases that unifying blast-radius contracts, targeted shadow semantic probing, high-cardinality DiD causal rollback, and shift-left rule mining achieves \ACDetPct{}\% fault detection, \ACDriftPct{}\% regional config-drift recall, and \CycleSpeedupVsStaging{}$\times$ faster release cycles than fixed staging while suppressing false rollbacks under traffic shocks.

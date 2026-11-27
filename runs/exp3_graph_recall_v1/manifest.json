@@ -1,0 +1,44 @@
+{
+  "schema_version": "2.0",
+  "run_id": "exp3_graph_recall_v1",
+  "experiment": "exp3_graph_recall",
+  "timestamp_utc": "2026-11-27T02:01:43.013391+00:00",
+  "git_commit": "da22818",
+  "harness_sha256": "7bdc53ff1b3c50eb74baa27109eab4d8267cc0353c40013092a4c442cd7ca614",
+  "dataset_sha256": "fe29a7ebbfe53012fc54c72d441bd8f18c132b08cc952eceee1af581f1bae4bc",
+  "command": "python3 eval/harness.py",
+  "seeds": [
+    3001,
+    3002,
+    3003,
+    3004,
+    3005,
+    3006,
+    3007,
+    3008,
+    3009,
+    3010,
+    3011,
+    3012,
+    3013,
+    3014,
+    3015,
+    3016,
+    3017,
+    3018,
+    3019,
+    3020
+  ],
+  "record_count": 320,
+  "metrics_file": "metrics.json",
+  "metrics_sha256": "2a263377cd595ead47e19c7d370249b2ae15d6ab1a351ebb025887b69b3711b9",
+  "artifact_sha256": "2a263377cd595ead47e19c7d370249b2ae15d6ab1a351ebb025887b69b3711b9",
+  "meta": {
+    "graph_recalls": [
+      0.5,
+      0.7,
+      0.85,
+      1.0
+    ]
+  }
+}

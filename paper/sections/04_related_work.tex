@@ -1,0 +1,8 @@
+\section{Related Work}
+\label{sec:related}
+
+\textbf{Feature Flags, Progressive Delivery, and Continuous Verification.}
+Prior empirical studies document how feature toggles enable safe incremental rollouts and decoupled testing in production~\cite{mahdavihezaveh2021software,mahdavihezaveh2022feature}, while recent progressive delivery frameworks automate canary stages and rollout verification~\cite{palvai2026developing,bates2021software,weing2018powered}. Configuration drift and multi-region microservice failures remain a leading cause of production incidents~\cite{laigner2026empirical,jayalath2024microservice}. AgenticCanary extends this literature by coupling pre-deploy change-impact contracts~\cite{chen2021cipc,chen2023microservice} directly to regional canary slices.
+
+\textbf{Observability, Fault Injection, and Causal Root-Cause Analysis.}
+Distributed tracing and multimodal observability systems such as Nezha~\cite{yu2023nezha}, large-scale trace analytics~\cite{peng2022large}, and high-cardinality anomaly detectors~\cite{shi2026conceptual} localize production anomalies across microservice dependencies, while chaos and fault-injection protocols evaluate resilience systematically~\cite{nelavala2026protocol,gunawat2025driven}. Automated incident playbooks and rollback controllers accelerate recovery~\cite{sikha2023playbook,sirikonda2026reducing}. Unlike purely reactive monitors, AgenticCanary closes the loop by feeding confirmed production rollbacks back into pre-deploy shift-left verification rules.

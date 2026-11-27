@@ -1,0 +1,16 @@
+\begin{table*}[t]
+\centering
+\caption{Main Benchmark Across 80 Multi-Region Release Scenarios (12 Services, 6 Regions, $85\%$ Blast-Graph Recall, 25 Paired Seeds; Mean [95\% Bootstrap CI]).}
+\label{tab:acv_main}
+\begin{tabular}{lcccccc}
+\toprule
+\textbf{Strategy} & \textbf{Fault Det. (\%)} $\uparrow$ & \textbf{Sem. Rec. (\%)} $\uparrow$ & \textbf{Drift Rec. (\%)} $\uparrow$ & \textbf{False Roll. (\%)} $\downarrow$ & \textbf{Cycle (min)} $\downarrow$ & \textbf{Escapes} $\downarrow$ \\
+\midrule
+FixedStaging & 18.3 [18.3, 18.3] & 73.3 & 0.0 & 0.00 & 47.86 & 49.00 \\
+StaticCanary5xxP99 & 3.4 [2.6, 4.3] & 0.0 & 1.2 & 24.00 & 12.61 & 42.76 \\
+ShadowDiffOnly & 48.3 [46.9, 49.8] & 85.1 & 81.2 & 52.20 & 8.97 & 11.68 \\
+CanaryNoCausal & 72.6 [70.6, 74.7] & 86.7 & 86.6 & 60.00 & 7.83 & 1.84 \\
+\textbf{AgenticCanary} & \textbf{92.1 [90.9, 93.3]} & \textbf{93.1} & \textbf{93.8} & \textbf{9.40} & \textbf{8.21} & \textbf{3.56} \\
+\bottomrule
+\end{tabular}
+\end{table*}

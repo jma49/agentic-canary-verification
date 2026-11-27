@@ -1,0 +1,24 @@
+\section{Evaluation and Empirical Results}
+\label{sec:eval}
+
+\subsection{Multi-Region Fault-Injection Testbed}
+Each experimental seed generates 80 chronological releases across our 12-service, 6-region topology (paired identically across all evaluated strategies): 20 clean releases accompanied by exogenous regional load shocks, 15 HTTP-200 semantic payload bugs, 20 regional config/feature-flag drift faults (invisible to single-region staging), 15 production-scale tail-latency regressions, and 10 downstream brownouts. All \TotalSealedRuns{} suites (\TotalSealedRecords{} runs, \TotalSimReleases{} releases) are sealed with git commits and SHA-256 harness/artifact manifests. Disjoint 20-seed A/A calibration yields \AANoiseDetPP{}~pp detection noise and \AANoiseCyclePct{}\% cycle-time noise.
+
+\input{generated/tables/main_benchmark.tex}
+
+\subsection{RQ1: Fault Detection, False Rollbacks, and Release Velocity}
+Table~\ref{tab:acv_main} summarizes primary results at $85\%$ blast-graph recall across 25 paired seeds:
+\begin{itemize}
+    \item \textbf{Vs.\ Fixed Staging}: \texttt{FixedStaging} misses \StagingDriftPct{}\% of regional config drift (0\% recall), detects only \StagingDetPct{}\% of total faults (\StagingEscapes{} escapes per 80 releases), and suffers a \StagingCycleMin{}-minute release cycle due to staging queue contention. \textbf{AgenticCanary} achieves \ACDetPct{}\% fault detection ($p\HolmPDetVsStaging{}$), \ACDriftPct{}\% config-drift recall, \ACEscapes{} escapes, and an \ACCycleMin{}-minute cycle (\CycleSpeedupVsStaging{}$\times$ faster).
+    \item \textbf{Vs.\ Static 5xx/P99 Canaries}: \texttt{StaticCanary5xxP99} catches \StaticCanarySemPct{}\% of HTTP-200 semantic bugs and only \StaticCanaryDetPct{}\% of faults overall (\StaticCanaryEscapes{} escapes), while suffering $24.0\%$ false rollbacks under traffic shocks. AgenticCanary improves detection by nearly $27\times$ ($p\HolmPDetVsStatic{}$) while slashing escapes and false rollbacks.
+    \item \textbf{Vs.\ Non-Causal \& Passive Shadow Baselines}: \texttt{ShadowDiffOnly} (\ShadowDetPct{}\% detection) and \texttt{CanaryNoCausal} (\NoCausalFalseRollPct{}\% false rollback) suffer severe false rollbacks during regional load spikes. AgenticCanary's DiD attribution cuts false rollbacks to \ACFalseRollPct{}\% ($p\HolmPFRVsNoCausal{}$) while achieving \ACMTTD{}~min MTTD, \ACMTTR{}~min MTTR, and blocking an average of \ACShiftLeft{} recurring faults pre-deploy via shift-left rules.
+\end{itemize}
+
+\input{generated/tables/ablation.tex}
+
+\subsection{RQ2--RQ3: Ablation, Graph Recall, and Traffic Shock Stress}
+Table~\ref{tab:acv_ablation} confirms every mechanism contributes materially: removing shadow semantic probing drops semantic recall from \ACSemPct{}\% to \AblNoShadowSemPct{}\%; removing DiD causal attribution spikes false rollbacks from \ACFalseRollPct{}\% to \AblNoCausalFRPct{}\%; removing shift-left memory increases escaped outages from \ACEscapes{} to \AblNoShiftEscapes{}; and removing blast-graph targeting slows cycle time from \ACCycleMin{} to \AblNoBlastCycle{}~min.
+
+Table~\ref{tab:acv_recall} validates non-circularity under incomplete blast graphs: even at $50\%$ graph recall (half of fault cones hidden from pre-deploy analysis), AgenticCanary sustains \RecallFiftyACDetPct{}\% detection vs.\ \RecallFiftyShadowDetPct{}\% for passive shadow diffing. Under $2\times$ extreme exogenous traffic shocks (\texttt{exp4\_shock\_stress\_v1}), AgenticCanary holds false rollbacks to \ShockTwoACFRPct{}\% compared to \ShockTwoNoCausalFRPct{}\% for \texttt{CanaryNoCausal}.
+
+\input{generated/tables/graph_recall.tex}

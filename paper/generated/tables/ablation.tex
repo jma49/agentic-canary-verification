@@ -1,0 +1,16 @@
+\begin{table}[t]
+\centering
+\caption{Component Ablation of AgenticCanary ($85\%$ Graph Recall, 25 Seeds).}
+\label{tab:acv_ablation}
+\begin{tabular}{lccccc}
+\toprule
+\textbf{Variant} & \textbf{Det\%} & \textbf{Sem\%} & \textbf{FR\%} & \textbf{Cycle} & \textbf{Esc.} \\
+\midrule
+\textbf{AgenticCanary} & \textbf{92.1} & \textbf{93.1} & \textbf{9.4} & \textbf{8.21} & \textbf{3.56} \\
+No-NoBlastGraph & 95.4 & 99.7 & 8.2 & 9.26 & 1.60 \\
+No-NoShadowProbe & 75.0 & 24.5 & 9.2 & 9.47 & 12.88 \\
+No-NoCausalDiD & 76.7 & 88.8 & 60.0 & 6.95 & 1.76 \\
+No-NoShiftLeft & 90.2 & 91.5 & 9.4 & 9.28 & 4.32 \\
+\bottomrule
+\end{tabular}
+\end{table}

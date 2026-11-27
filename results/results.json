@@ -1,0 +1,2655 @@
+{
+  "audit_passed": true,
+  "verified_runs": 5,
+  "total_records": 930,
+  "aa_noise": {
+    "det_abs_pp": 0.58,
+    "cycle_rel_pct": 1.15
+  },
+  "main_benchmark": {
+    "FixedStaging": {
+      "fault_detection_rate": {
+        "mean": 0.1833,
+        "ci_lo": 0.1833,
+        "ci_hi": 0.1833,
+        "n": 25
+      },
+      "semantic_bug_recall": {
+        "mean": 0.7333,
+        "ci_lo": 0.7333,
+        "ci_hi": 0.7333,
+        "n": 25
+      },
+      "config_drift_recall": {
+        "mean": 0.0,
+        "ci_lo": 0.0,
+        "ci_hi": 0.0,
+        "n": 25
+      },
+      "false_rollback_rate": {
+        "mean": 0.0,
+        "ci_lo": 0.0,
+        "ci_hi": 0.0,
+        "n": 25
+      },
+      "mttd_min": {
+        "mean": 0.0,
+        "ci_lo": 0.0,
+        "ci_hi": 0.0,
+        "n": 25
+      },
+      "mttr_min": {
+        "mean": 55.0,
+        "ci_lo": 55.0,
+        "ci_hi": 55.0,
+        "n": 25
+      },
+      "release_cycle_min": {
+        "mean": 47.8586,
+        "ci_lo": 47.675,
+        "ci_hi": 48.0467,
+        "n": 25
+      },
+      "shift_left_prevented_count": {
+        "mean": 0.0,
+        "ci_lo": 0.0,
+        "ci_hi": 0.0,
+        "n": 25
+      },
+      "probe_cost_units": {
+        "mean": 1440.0,
+        "ci_lo": 1440.0,
+        "ci_hi": 1440.0,
+        "n": 25
+      },
+      "escaped_outages": {
+        "mean": 49.0,
+        "ci_lo": 49.0,
+        "ci_hi": 49.0,
+        "n": 25
+      }
+    },
+    "StaticCanary5xxP99": {
+      "fault_detection_rate": {
+        "mean": 0.034,
+        "ci_lo": 0.026,
+        "ci_hi": 0.0427,
+        "n": 25
+      },
+      "semantic_bug_recall": {
+        "mean": 0.0,
+        "ci_lo": 0.0,
+        "ci_hi": 0.0,
+        "n": 25
+      },
+      "config_drift_recall": {
+        "mean": 0.012,
+        "ci_lo": 0.004,
+        "ci_hi": 0.022,
+        "n": 25
+      },
+      "false_rollback_rate": {
+        "mean": 0.24,
+        "ci_lo": 0.204,
+        "ci_hi": 0.276,
+        "n": 25
+      },
+      "mttd_min": {
+        "mean": 7.7827,
+        "ci_lo": 6.7067,
+        "ci_hi": 8.7093,
+        "n": 25
+      },
+      "mttr_min": {
+        "mean": 41.7853,
+        "ci_lo": 40.7473,
+        "ci_hi": 42.798,
+        "n": 25
+      },
+      "release_cycle_min": {
+        "mean": 12.6125,
+        "ci_lo": 12.485,
+        "ci_hi": 12.7305,
+        "n": 25
+      },
+      "shift_left_prevented_count": {
+        "mean": 0.0,
+        "ci_lo": 0.0,
+        "ci_hi": 0.0,
+        "n": 25
+      },
+      "probe_cost_units": {
+        "mean": 0.0,
+        "ci_lo": 0.0,
+        "ci_hi": 0.0,
+        "n": 25
+      },
+      "escaped_outages": {
+        "mean": 42.76,
+        "ci_lo": 41.4,
+        "ci_hi": 44.12,
+        "n": 25
+      }
+    },
+    "ShadowDiffOnly": {
+      "fault_detection_rate": {
+        "mean": 0.4833,
+        "ci_lo": 0.4693,
+        "ci_hi": 0.498,
+        "n": 25
+      },
+      "semantic_bug_recall": {
+        "mean": 0.8507,
+        "ci_lo": 0.8133,
+        "ci_hi": 0.888,
+        "n": 25
+      },
+      "config_drift_recall": {
+        "mean": 0.812,
+        "ci_lo": 0.782,
+        "ci_hi": 0.842,
+        "n": 25
+      },
+      "false_rollback_rate": {
+        "mean": 0.522,
+        "ci_lo": 0.488,
+        "ci_hi": 0.554,
+        "n": 25
+      },
+      "mttd_min": {
+        "mean": 3.5832,
+        "ci_lo": 3.4521,
+        "ci_hi": 3.7151,
+        "n": 25
+      },
+      "mttr_min": {
+        "mean": 16.318,
+        "ci_lo": 15.4567,
+        "ci_hi": 17.1427,
+        "n": 25
+      },
+      "release_cycle_min": {
+        "mean": 8.972,
+        "ci_lo": 8.8375,
+        "ci_hi": 9.105,
+        "n": 25
+      },
+      "shift_left_prevented_count": {
+        "mean": 0.0,
+        "ci_lo": 0.0,
+        "ci_hi": 0.0,
+        "n": 25
+      },
+      "probe_cost_units": {
+        "mean": 1307.76,
+        "ci_lo": 1281.12,
+        "ci_hi": 1334.4,
+        "n": 25
+      },
+      "escaped_outages": {
+        "mean": 11.68,
+        "ci_lo": 10.6,
+        "ci_hi": 12.72,
+        "n": 25
+      }
+    },
+    "CanaryNoCausal": {
+      "fault_detection_rate": {
+        "mean": 0.726,
+        "ci_lo": 0.706,
+        "ci_hi": 0.7473,
+        "n": 25
+      },
+      "semantic_bug_recall": {
+        "mean": 0.8667,
+        "ci_lo": 0.8347,
+        "ci_hi": 0.9013,
+        "n": 25
+      },
+      "config_drift_recall": {
+        "mean": 0.866,
+        "ci_lo": 0.842,
+        "ci_hi": 0.888,
+        "n": 25
+      },
+      "false_rollback_rate": {
+        "mean": 0.6,
+        "ci_lo": 0.572,
+        "ci_hi": 0.628,
+        "n": 25
+      },
+      "mttd_min": {
+        "mean": 3.6594,
+        "ci_lo": 3.5573,
+        "ci_hi": 3.7587,
+        "n": 25
+      },
+      "mttr_min": {
+        "mean": 8.1887,
+        "ci_lo": 7.8207,
+        "ci_hi": 8.6327,
+        "n": 25
+      },
+      "release_cycle_min": {
+        "mean": 7.8275,
+        "ci_lo": 7.7185,
+        "ci_hi": 7.9355,
+        "n": 25
+      },
+      "shift_left_prevented_count": {
+        "mean": 0.0,
+        "ci_lo": 0.0,
+        "ci_hi": 0.0,
+        "n": 25
+      },
+      "probe_cost_units": {
+        "mean": 4156.25,
+        "ci_lo": 4073.6,
+        "ci_hi": 4237.0,
+        "n": 25
+      },
+      "escaped_outages": {
+        "mean": 1.84,
+        "ci_lo": 1.36,
+        "ci_hi": 2.4,
+        "n": 25
+      }
+    },
+    "AgenticCanary": {
+      "fault_detection_rate": {
+        "mean": 0.9207,
+        "ci_lo": 0.9087,
+        "ci_hi": 0.9327,
+        "n": 25
+      },
+      "semantic_bug_recall": {
+        "mean": 0.9307,
+        "ci_lo": 0.904,
+        "ci_hi": 0.9547,
+        "n": 25
+      },
+      "config_drift_recall": {
+        "mean": 0.938,
+        "ci_lo": 0.92,
+        "ci_hi": 0.956,
+        "n": 25
+      },
+      "false_rollback_rate": {
+        "mean": 0.094,
+        "ci_lo": 0.066,
+        "ci_hi": 0.124,
+        "n": 25
+      },
+      "mttd_min": {
+        "mean": 4.4247,
+        "ci_lo": 4.3238,
+        "ci_hi": 4.5111,
+        "n": 25
+      },
+      "mttr_min": {
+        "mean": 10.9667,
+        "ci_lo": 10.4466,
+        "ci_hi": 11.4499,
+        "n": 25
+      },
+      "release_cycle_min": {
+        "mean": 8.2115,
+        "ci_lo": 8.1384,
+        "ci_hi": 8.2834,
+        "n": 25
+      },
+      "shift_left_prevented_count": {
+        "mean": 12.28,
+        "ci_lo": 11.76,
+        "ci_hi": 12.76,
+        "n": 25
+      },
+      "probe_cost_units": {
+        "mean": 4865.65,
+        "ci_lo": 4816.43,
+        "ci_hi": 4914.05,
+        "n": 25
+      },
+      "escaped_outages": {
+        "mean": 3.56,
+        "ci_lo": 3.0,
+        "ci_hi": 4.08,
+        "n": 25
+      }
+    }
+  },
+  "holm_pvalues": {
+    "FixedStaging:escaped_outages": 0.00017984,
+    "FixedStaging:fault_detection_rate": 0.0001805,
+    "CanaryNoCausal:false_rollback_rate": 0.0001805,
+    "ShadowDiffOnly:false_rollback_rate": 0.0001805,
+    "StaticCanary5xxP99:fault_detection_rate": 0.0001805,
+    "CanaryNoCausal:fault_detection_rate": 0.0001805,
+    "ShadowDiffOnly:escaped_outages": 0.0001805,
+    "StaticCanary5xxP99:escaped_outages": 0.0001805,
+    "ShadowDiffOnly:fault_detection_rate": 0.0001805,
+    "StaticCanary5xxP99:release_cycle_min": 0.0001805,
+    "FixedStaging:release_cycle_min": 0.0001805,
+    "ShadowDiffOnly:release_cycle_min": 0.0001805,
+    "CanaryNoCausal:release_cycle_min": 0.0001805,
+    "CanaryNoCausal:escaped_outages": 0.00021141,
+    "StaticCanary5xxP99:false_rollback_rate": 0.00021141,
+    "FixedStaging:false_rollback_rate": 0.00021141
+  },
+  "ablation": {
+    "AgenticCanary": {
+      "fault_detection_rate": {
+        "mean": 0.9207,
+        "ci_lo": 0.9087,
+        "ci_hi": 0.9327,
+        "n": 25
+      },
+      "semantic_bug_recall": {
+        "mean": 0.9307,
+        "ci_lo": 0.904,
+        "ci_hi": 0.9547,
+        "n": 25
+      },
+      "config_drift_recall": {
+        "mean": 0.938,
+        "ci_lo": 0.92,
+        "ci_hi": 0.956,
+        "n": 25
+      },
+      "false_rollback_rate": {
+        "mean": 0.094,
+        "ci_lo": 0.066,
+        "ci_hi": 0.124,
+        "n": 25
+      },
+      "mttd_min": {
+        "mean": 4.4247,
+        "ci_lo": 4.3238,
+        "ci_hi": 4.5111,
+        "n": 25
+      },
+      "mttr_min": {
+        "mean": 10.9667,
+        "ci_lo": 10.4466,
+        "ci_hi": 11.4499,
+        "n": 25
+      },
+      "release_cycle_min": {
+        "mean": 8.2115,
+        "ci_lo": 8.1384,
+        "ci_hi": 8.2834,
+        "n": 25
+      },
+      "shift_left_prevented_count": {
+        "mean": 12.28,
+        "ci_lo": 11.76,
+        "ci_hi": 12.76,
+        "n": 25
+      },
+      "probe_cost_units": {
+        "mean": 4865.65,
+        "ci_lo": 4816.43,
+        "ci_hi": 4914.05,
+        "n": 25
+      },
+      "escaped_outages": {
+        "mean": 3.56,
+        "ci_lo": 3.0,
+        "ci_hi": 4.08,
+        "n": 25
+      }
+    },
+    "AgenticCanary-NoBlastGraph": {
+      "fault_detection_rate": {
+        "mean": 0.954,
+        "ci_lo": 0.9453,
+        "ci_hi": 0.964,
+        "n": 25
+      },
+      "semantic_bug_recall": {
+        "mean": 0.9973,
+        "ci_lo": 0.992,
+        "ci_hi": 1.0,
+        "n": 25
+      },
+      "config_drift_recall": {
+        "mean": 0.992,
+        "ci_lo": 0.984,
+        "ci_hi": 0.998,
+        "n": 25
+      },
+      "false_rollback_rate": {
+        "mean": 0.082,
+        "ci_lo": 0.058,
+        "ci_hi": 0.108,
+        "n": 25
+      },
+      "mttd_min": {
+        "mean": 6.6313,
+        "ci_lo": 6.4962,
+        "ci_hi": 6.7831,
+        "n": 25
+      },
+      "mttr_min": {
+        "mean": 11.0929,
+        "ci_lo": 10.5697,
+        "ci_hi": 11.6353,
+        "n": 25
+      },
+      "release_cycle_min": {
+        "mean": 9.2553,
+        "ci_lo": 9.1644,
+        "ci_hi": 9.3585,
+        "n": 25
+      },
+      "shift_left_prevented_count": {
+        "mean": 12.6,
+        "ci_lo": 12.12,
+        "ci_hi": 13.08,
+        "n": 25
+      },
+      "probe_cost_units": {
+        "mean": 5596.54,
+        "ci_lo": 5538.64,
+        "ci_hi": 5664.15,
+        "n": 25
+      },
+      "escaped_outages": {
+        "mean": 1.6,
+        "ci_lo": 1.04,
+        "ci_hi": 2.16,
+        "n": 25
+      }
+    },
+    "AgenticCanary-NoShadowProbe": {
+      "fault_detection_rate": {
+        "mean": 0.75,
+        "ci_lo": 0.74,
+        "ci_hi": 0.7613,
+        "n": 25
+      },
+      "semantic_bug_recall": {
+        "mean": 0.2453,
+        "ci_lo": 0.232,
+        "ci_hi": 0.256,
+        "n": 25
+      },
+      "config_drift_recall": {
+        "mean": 0.938,
+        "ci_lo": 0.92,
+        "ci_hi": 0.956,
+        "n": 25
+      },
+      "false_rollback_rate": {
+        "mean": 0.092,
+        "ci_lo": 0.066,
+        "ci_hi": 0.12,
+        "n": 25
+      },
+      "mttd_min": {
+        "mean": 4.7667,
+        "ci_lo": 4.6682,
+        "ci_hi": 4.863,
+        "n": 25
+      },
+      "mttr_min": {
+        "mean": 19.7005,
+        "ci_lo": 19.1701,
+        "ci_hi": 20.2263,
+        "n": 25
+      },
+      "release_cycle_min": {
+        "mean": 9.474,
+        "ci_lo": 9.3842,
+        "ci_hi": 9.5626,
+        "n": 25
+      },
+      "shift_left_prevented_count": {
+        "mean": 8.88,
+        "ci_lo": 8.44,
+        "ci_hi": 9.36,
+        "n": 25
+      },
+      "probe_cost_units": {
+        "mean": 4679.92,
+        "ci_lo": 4629.96,
+        "ci_hi": 4730.12,
+        "n": 25
+      },
+      "escaped_outages": {
+        "mean": 12.88,
+        "ci_lo": 12.24,
+        "ci_hi": 13.52,
+        "n": 25
+      }
+    },
+    "AgenticCanary-NoCausalDiD": {
+      "fault_detection_rate": {
+        "mean": 0.7667,
+        "ci_lo": 0.746,
+        "ci_hi": 0.788,
+        "n": 25
+      },
+      "semantic_bug_recall": {
+        "mean": 0.888,
+        "ci_lo": 0.8613,
+        "ci_hi": 0.9173,
+        "n": 25
+      },
+      "config_drift_recall": {
+        "mean": 0.9,
+        "ci_lo": 0.882,
+        "ci_hi": 0.918,
+        "n": 25
+      },
+      "false_rollback_rate": {
+        "mean": 0.6,
+        "ci_lo": 0.572,
+        "ci_hi": 0.628,
+        "n": 25
+      },
+      "mttd_min": {
+        "mean": 3.7976,
+        "ci_lo": 3.6904,
+        "ci_hi": 3.9016,
+        "n": 25
+      },
+      "mttr_min": {
+        "mean": 8.5456,
+        "ci_lo": 8.1145,
+        "ci_hi": 9.0592,
+        "n": 25
+      },
+      "release_cycle_min": {
+        "mean": 6.9539,
+        "ci_lo": 6.8386,
+        "ci_hi": 7.0674,
+        "n": 25
+      },
+      "shift_left_prevented_count": {
+        "mean": 11.48,
+        "ci_lo": 10.84,
+        "ci_hi": 12.08,
+        "n": 25
+      },
+      "probe_cost_units": {
+        "mean": 3824.93,
+        "ci_lo": 3741.16,
+        "ci_hi": 3905.56,
+        "n": 25
+      },
+      "escaped_outages": {
+        "mean": 1.76,
+        "ci_lo": 1.32,
+        "ci_hi": 2.28,
+        "n": 25
+      }
+    },
+    "AgenticCanary-NoShiftLeft": {
+      "fault_detection_rate": {
+        "mean": 0.902,
+        "ci_lo": 0.8907,
+        "ci_hi": 0.9133,
+        "n": 25
+      },
+      "semantic_bug_recall": {
+        "mean": 0.9147,
+        "ci_lo": 0.8827,
+        "ci_hi": 0.9413,
+        "n": 25
+      },
+      "config_drift_recall": {
+        "mean": 0.92,
+        "ci_lo": 0.898,
+        "ci_hi": 0.942,
+        "n": 25
+      },
+      "false_rollback_rate": {
+        "mean": 0.094,
+        "ci_lo": 0.066,
+        "ci_hi": 0.124,
+        "n": 25
+      },
+      "mttd_min": {
+        "mean": 4.3031,
+        "ci_lo": 4.231,
+        "ci_hi": 4.3718,
+        "n": 25
+      },
+      "mttr_min": {
+        "mean": 10.7373,
+        "ci_lo": 10.318,
+        "ci_hi": 11.1307,
+        "n": 25
+      },
+      "release_cycle_min": {
+        "mean": 9.283,
+        "ci_lo": 9.224,
+        "ci_hi": 9.346,
+        "n": 25
+      },
+      "shift_left_prevented_count": {
+        "mean": 0.0,
+        "ci_lo": 0.0,
+        "ci_hi": 0.0,
+        "n": 25
+      },
+      "probe_cost_units": {
+        "mean": 5342.8,
+        "ci_lo": 5296.25,
+        "ci_hi": 5394.1,
+        "n": 25
+      },
+      "escaped_outages": {
+        "mean": 4.32,
+        "ci_lo": 3.76,
+        "ci_hi": 4.88,
+        "n": 25
+      }
+    }
+  },
+  "graph_recall": {
+    "0.5": {
+      "FixedStaging": {
+        "fault_detection_rate": {
+          "mean": 0.1833,
+          "ci_lo": 0.1833,
+          "ci_hi": 0.1833,
+          "n": 20
+        },
+        "semantic_bug_recall": {
+          "mean": 0.7333,
+          "ci_lo": 0.7333,
+          "ci_hi": 0.7333,
+          "n": 20
+        },
+        "config_drift_recall": {
+          "mean": 0.0,
+          "ci_lo": 0.0,
+          "ci_hi": 0.0,
+          "n": 20
+        },
+        "false_rollback_rate": {
+          "mean": 0.0,
+          "ci_lo": 0.0,
+          "ci_hi": 0.0,
+          "n": 20
+        },
+        "mttd_min": {
+          "mean": 0.0,
+          "ci_lo": 0.0,
+          "ci_hi": 0.0,
+          "n": 20
+        },
+        "mttr_min": {
+          "mean": 55.0,
+          "ci_lo": 55.0,
+          "ci_hi": 55.0,
+          "n": 20
+        },
+        "release_cycle_min": {
+          "mean": 47.9338,
+          "ci_lo": 47.7257,
+          "ci_hi": 48.14,
+          "n": 20
+        },
+        "shift_left_prevented_count": {
+          "mean": 0.0,
+          "ci_lo": 0.0,
+          "ci_hi": 0.0,
+          "n": 20
+        },
+        "probe_cost_units": {
+          "mean": 1440.0,
+          "ci_lo": 1440.0,
+          "ci_hi": 1440.0,
+          "n": 20
+        },
+        "escaped_outages": {
+          "mean": 49.0,
+          "ci_lo": 49.0,
+          "ci_hi": 49.0,
+          "n": 20
+        }
+      },
+      "StaticCanary5xxP99": {
+        "fault_detection_rate": {
+          "mean": 0.0317,
+          "ci_lo": 0.0225,
+          "ci_hi": 0.0425,
+          "n": 20
+        },
+        "semantic_bug_recall": {
+          "mean": 0.0,
+          "ci_lo": 0.0,
+          "ci_hi": 0.0,
+          "n": 20
+        },
+        "config_drift_recall": {
+          "mean": 0.0125,
+          "ci_lo": 0.0025,
+          "ci_hi": 0.025,
+          "n": 20
+        },
+        "false_rollback_rate": {
+          "mean": 0.2575,
+          "ci_lo": 0.2175,
+          "ci_hi": 0.295,
+          "n": 20
+        },
+        "mttd_min": {
+          "mean": 7.4783,
+          "ci_lo": 6.2333,
+          "ci_hi": 8.5367,
+          "n": 20
+        },
+        "mttr_min": {
+          "mean": 42.1092,
+          "ci_lo": 40.93,
+          "ci_hi": 43.2708,
+          "n": 20
+        },
+        "release_cycle_min": {
+          "mean": 12.6119,
+          "ci_lo": 12.4769,
+          "ci_hi": 12.7381,
+          "n": 20
+        },
+        "shift_left_prevented_count": {
+          "mean": 0.0,
+          "ci_lo": 0.0,
+          "ci_hi": 0.0,
+          "n": 20
+        },
+        "probe_cost_units": {
+          "mean": 0.0,
+          "ci_lo": 0.0,
+          "ci_hi": 0.0,
+          "n": 20
+        },
+        "escaped_outages": {
+          "mean": 43.2,
+          "ci_lo": 41.65,
+          "ci_hi": 44.75,
+          "n": 20
+        }
+      },
+      "ShadowDiffOnly": {
+        "fault_detection_rate": {
+          "mean": 0.4833,
+          "ci_lo": 0.47,
+          "ci_hi": 0.4975,
+          "n": 20
+        },
+        "semantic_bug_recall": {
+          "mean": 0.85,
+          "ci_lo": 0.8067,
+          "ci_hi": 0.8967,
+          "n": 20
+        },
+        "config_drift_recall": {
+          "mean": 0.8125,
+          "ci_lo": 0.785,
+          "ci_hi": 0.84,
+          "n": 20
+        },
+        "false_rollback_rate": {
+          "mean": 0.535,
+          "ci_lo": 0.4975,
+          "ci_hi": 0.57,
+          "n": 20
+        },
+        "mttd_min": {
+          "mean": 3.5227,
+          "ci_lo": 3.3697,
+          "ci_hi": 3.6757,
+          "n": 20
+        },
+        "mttr_min": {
+          "mean": 16.8342,
+          "ci_lo": 15.9883,
+          "ci_hi": 17.6342,
+          "n": 20
+        },
+        "release_cycle_min": {
+          "mean": 8.965,
+          "ci_lo": 8.82,
+          "ci_hi": 9.1256,
+          "n": 20
+        },
+        "shift_left_prevented_count": {
+          "mean": 0.0,
+          "ci_lo": 0.0,
+          "ci_hi": 0.0,
+          "n": 20
+        },
+        "probe_cost_units": {
+          "mean": 1307.7,
+          "ci_lo": 1278.0,
+          "ci_hi": 1339.8,
+          "n": 20
+        },
+        "escaped_outages": {
+          "mean": 12.4,
+          "ci_lo": 11.35,
+          "ci_hi": 13.35,
+          "n": 20
+        }
+      },
+      "AgenticCanary": {
+        "fault_detection_rate": {
+          "mean": 0.7908,
+          "ci_lo": 0.7625,
+          "ci_hi": 0.8167,
+          "n": 20
+        },
+        "semantic_bug_recall": {
+          "mean": 0.8167,
+          "ci_lo": 0.76,
+          "ci_hi": 0.87,
+          "n": 20
+        },
+        "config_drift_recall": {
+          "mean": 0.82,
+          "ci_lo": 0.7875,
+          "ci_hi": 0.8525,
+          "n": 20
+        },
+        "false_rollback_rate": {
+          "mean": 0.09,
+          "ci_lo": 0.06,
+          "ci_hi": 0.1225,
+          "n": 20
+        },
+        "mttd_min": {
+          "mean": 5.3992,
+          "ci_lo": 5.2026,
+          "ci_hi": 5.5828,
+          "n": 20
+        },
+        "mttr_min": {
+          "mean": 18.7684,
+          "ci_lo": 17.6062,
+          "ci_hi": 20.0658,
+          "n": 20
+        },
+        "release_cycle_min": {
+          "mean": 9.3745,
+          "ci_lo": 9.2358,
+          "ci_hi": 9.52,
+          "n": 20
+        },
+        "shift_left_prevented_count": {
+          "mean": 11.1,
+          "ci_lo": 10.35,
+          "ci_hi": 11.75,
+          "n": 20
+        },
+        "probe_cost_units": {
+          "mean": 5746.6,
+          "ci_lo": 5641.75,
+          "ci_hi": 5860.3875,
+          "n": 20
+        },
+        "escaped_outages": {
+          "mean": 10.95,
+          "ci_lo": 9.55,
+          "ci_hi": 12.55,
+          "n": 20
+        }
+      }
+    },
+    "0.7": {
+      "FixedStaging": {
+        "fault_detection_rate": {
+          "mean": 0.1833,
+          "ci_lo": 0.1833,
+          "ci_hi": 0.1833,
+          "n": 20
+        },
+        "semantic_bug_recall": {
+          "mean": 0.7333,
+          "ci_lo": 0.7333,
+          "ci_hi": 0.7333,
+          "n": 20
+        },
+        "config_drift_recall": {
+          "mean": 0.0,
+          "ci_lo": 0.0,
+          "ci_hi": 0.0,
+          "n": 20
+        },
+        "false_rollback_rate": {
+          "mean": 0.0,
+          "ci_lo": 0.0,
+          "ci_hi": 0.0,
+          "n": 20
+        },
+        "mttd_min": {
+          "mean": 0.0,
+          "ci_lo": 0.0,
+          "ci_hi": 0.0,
+          "n": 20
+        },
+        "mttr_min": {
+          "mean": 55.0,
+          "ci_lo": 55.0,
+          "ci_hi": 55.0,
+          "n": 20
+        },
+        "release_cycle_min": {
+          "mean": 47.9338,
+          "ci_lo": 47.7257,
+          "ci_hi": 48.14,
+          "n": 20
+        },
+        "shift_left_prevented_count": {
+          "mean": 0.0,
+          "ci_lo": 0.0,
+          "ci_hi": 0.0,
+          "n": 20
+        },
+        "probe_cost_units": {
+          "mean": 1440.0,
+          "ci_lo": 1440.0,
+          "ci_hi": 1440.0,
+          "n": 20
+        },
+        "escaped_outages": {
+          "mean": 49.0,
+          "ci_lo": 49.0,
+          "ci_hi": 49.0,
+          "n": 20
+        }
+      },
+      "StaticCanary5xxP99": {
+        "fault_detection_rate": {
+          "mean": 0.0317,
+          "ci_lo": 0.0225,
+          "ci_hi": 0.0425,
+          "n": 20
+        },
+        "semantic_bug_recall": {
+          "mean": 0.0,
+          "ci_lo": 0.0,
+          "ci_hi": 0.0,
+          "n": 20
+        },
+        "config_drift_recall": {
+          "mean": 0.0125,
+          "ci_lo": 0.0025,
+          "ci_hi": 0.025,
+          "n": 20
+        },
+        "false_rollback_rate": {
+          "mean": 0.2575,
+          "ci_lo": 0.2175,
+          "ci_hi": 0.295,
+          "n": 20
+        },
+        "mttd_min": {
+          "mean": 7.4783,
+          "ci_lo": 6.2333,
+          "ci_hi": 8.5367,
+          "n": 20
+        },
+        "mttr_min": {
+          "mean": 42.1092,
+          "ci_lo": 40.93,
+          "ci_hi": 43.2708,
+          "n": 20
+        },
+        "release_cycle_min": {
+          "mean": 12.6119,
+          "ci_lo": 12.4769,
+          "ci_hi": 12.7381,
+          "n": 20
+        },
+        "shift_left_prevented_count": {
+          "mean": 0.0,
+          "ci_lo": 0.0,
+          "ci_hi": 0.0,
+          "n": 20
+        },
+        "probe_cost_units": {
+          "mean": 0.0,
+          "ci_lo": 0.0,
+          "ci_hi": 0.0,
+          "n": 20
+        },
+        "escaped_outages": {
+          "mean": 43.2,
+          "ci_lo": 41.65,
+          "ci_hi": 44.75,
+          "n": 20
+        }
+      },
+      "ShadowDiffOnly": {
+        "fault_detection_rate": {
+          "mean": 0.4833,
+          "ci_lo": 0.47,
+          "ci_hi": 0.4975,
+          "n": 20
+        },
+        "semantic_bug_recall": {
+          "mean": 0.85,
+          "ci_lo": 0.8067,
+          "ci_hi": 0.8967,
+          "n": 20
+        },
+        "config_drift_recall": {
+          "mean": 0.8125,
+          "ci_lo": 0.785,
+          "ci_hi": 0.84,
+          "n": 20
+        },
+        "false_rollback_rate": {
+          "mean": 0.535,
+          "ci_lo": 0.4975,
+          "ci_hi": 0.57,
+          "n": 20
+        },
+        "mttd_min": {
+          "mean": 3.5227,
+          "ci_lo": 3.3697,
+          "ci_hi": 3.6757,
+          "n": 20
+        },
+        "mttr_min": {
+          "mean": 16.8342,
+          "ci_lo": 15.9883,
+          "ci_hi": 17.6342,
+          "n": 20
+        },
+        "release_cycle_min": {
+          "mean": 8.965,
+          "ci_lo": 8.82,
+          "ci_hi": 9.1256,
+          "n": 20
+        },
+        "shift_left_prevented_count": {
+          "mean": 0.0,
+          "ci_lo": 0.0,
+          "ci_hi": 0.0,
+          "n": 20
+        },
+        "probe_cost_units": {
+          "mean": 1307.7,
+          "ci_lo": 1278.0,
+          "ci_hi": 1339.8,
+          "n": 20
+        },
+        "escaped_outages": {
+          "mean": 12.4,
+          "ci_lo": 11.35,
+          "ci_hi": 13.35,
+          "n": 20
+        }
+      },
+      "AgenticCanary": {
+        "fault_detection_rate": {
+          "mean": 0.8692,
+          "ci_lo": 0.8533,
+          "ci_hi": 0.8867,
+          "n": 20
+        },
+        "semantic_bug_recall": {
+          "mean": 0.89,
+          "ci_lo": 0.86,
+          "ci_hi": 0.9167,
+          "n": 20
+        },
+        "config_drift_recall": {
+          "mean": 0.8875,
+          "ci_lo": 0.8575,
+          "ci_hi": 0.9175,
+          "n": 20
+        },
+        "false_rollback_rate": {
+          "mean": 0.09,
+          "ci_lo": 0.06,
+          "ci_hi": 0.1225,
+          "n": 20
+        },
+        "mttd_min": {
+          "mean": 4.8039,
+          "ci_lo": 4.6938,
+          "ci_hi": 4.9083,
+          "n": 20
+        },
+        "mttr_min": {
+          "mean": 14.2756,
+          "ci_lo": 13.4675,
+          "ci_hi": 14.9973,
+          "n": 20
+        },
+        "release_cycle_min": {
+          "mean": 8.6866,
+          "ci_lo": 8.5997,
+          "ci_hi": 8.7597,
+          "n": 20
+        },
+        "shift_left_prevented_count": {
+          "mean": 11.8,
+          "ci_lo": 11.3,
+          "ci_hi": 12.35,
+          "n": 20
+        },
+        "probe_cost_units": {
+          "mean": 5227.1375,
+          "ci_lo": 5163.5,
+          "ci_hi": 5283.375,
+          "n": 20
+        },
+        "escaped_outages": {
+          "mean": 6.65,
+          "ci_lo": 5.75,
+          "ci_hi": 7.45,
+          "n": 20
+        }
+      }
+    },
+    "0.85": {
+      "FixedStaging": {
+        "fault_detection_rate": {
+          "mean": 0.1833,
+          "ci_lo": 0.1833,
+          "ci_hi": 0.1833,
+          "n": 20
+        },
+        "semantic_bug_recall": {
+          "mean": 0.7333,
+          "ci_lo": 0.7333,
+          "ci_hi": 0.7333,
+          "n": 20
+        },
+        "config_drift_recall": {
+          "mean": 0.0,
+          "ci_lo": 0.0,
+          "ci_hi": 0.0,
+          "n": 20
+        },
+        "false_rollback_rate": {
+          "mean": 0.0,
+          "ci_lo": 0.0,
+          "ci_hi": 0.0,
+          "n": 20
+        },
+        "mttd_min": {
+          "mean": 0.0,
+          "ci_lo": 0.0,
+          "ci_hi": 0.0,
+          "n": 20
+        },
+        "mttr_min": {
+          "mean": 55.0,
+          "ci_lo": 55.0,
+          "ci_hi": 55.0,
+          "n": 20
+        },
+        "release_cycle_min": {
+          "mean": 47.9338,
+          "ci_lo": 47.7257,
+          "ci_hi": 48.14,
+          "n": 20
+        },
+        "shift_left_prevented_count": {
+          "mean": 0.0,
+          "ci_lo": 0.0,
+          "ci_hi": 0.0,
+          "n": 20
+        },
+        "probe_cost_units": {
+          "mean": 1440.0,
+          "ci_lo": 1440.0,
+          "ci_hi": 1440.0,
+          "n": 20
+        },
+        "escaped_outages": {
+          "mean": 49.0,
+          "ci_lo": 49.0,
+          "ci_hi": 49.0,
+          "n": 20
+        }
+      },
+      "StaticCanary5xxP99": {
+        "fault_detection_rate": {
+          "mean": 0.0317,
+          "ci_lo": 0.0225,
+          "ci_hi": 0.0425,
+          "n": 20
+        },
+        "semantic_bug_recall": {
+          "mean": 0.0,
+          "ci_lo": 0.0,
+          "ci_hi": 0.0,
+          "n": 20
+        },
+        "config_drift_recall": {
+          "mean": 0.0125,
+          "ci_lo": 0.0025,
+          "ci_hi": 0.025,
+          "n": 20
+        },
+        "false_rollback_rate": {
+          "mean": 0.2575,
+          "ci_lo": 0.2175,
+          "ci_hi": 0.295,
+          "n": 20
+        },
+        "mttd_min": {
+          "mean": 7.4783,
+          "ci_lo": 6.2333,
+          "ci_hi": 8.5367,
+          "n": 20
+        },
+        "mttr_min": {
+          "mean": 42.1092,
+          "ci_lo": 40.93,
+          "ci_hi": 43.2708,
+          "n": 20
+        },
+        "release_cycle_min": {
+          "mean": 12.6119,
+          "ci_lo": 12.4769,
+          "ci_hi": 12.7381,
+          "n": 20
+        },
+        "shift_left_prevented_count": {
+          "mean": 0.0,
+          "ci_lo": 0.0,
+          "ci_hi": 0.0,
+          "n": 20
+        },
+        "probe_cost_units": {
+          "mean": 0.0,
+          "ci_lo": 0.0,
+          "ci_hi": 0.0,
+          "n": 20
+        },
+        "escaped_outages": {
+          "mean": 43.2,
+          "ci_lo": 41.65,
+          "ci_hi": 44.75,
+          "n": 20
+        }
+      },
+      "ShadowDiffOnly": {
+        "fault_detection_rate": {
+          "mean": 0.4833,
+          "ci_lo": 0.47,
+          "ci_hi": 0.4975,
+          "n": 20
+        },
+        "semantic_bug_recall": {
+          "mean": 0.85,
+          "ci_lo": 0.8067,
+          "ci_hi": 0.8967,
+          "n": 20
+        },
+        "config_drift_recall": {
+          "mean": 0.8125,
+          "ci_lo": 0.785,
+          "ci_hi": 0.84,
+          "n": 20
+        },
+        "false_rollback_rate": {
+          "mean": 0.535,
+          "ci_lo": 0.4975,
+          "ci_hi": 0.57,
+          "n": 20
+        },
+        "mttd_min": {
+          "mean": 3.5227,
+          "ci_lo": 3.3697,
+          "ci_hi": 3.6757,
+          "n": 20
+        },
+        "mttr_min": {
+          "mean": 16.8342,
+          "ci_lo": 15.9883,
+          "ci_hi": 17.6342,
+          "n": 20
+        },
+        "release_cycle_min": {
+          "mean": 8.965,
+          "ci_lo": 8.82,
+          "ci_hi": 9.1256,
+          "n": 20
+        },
+        "shift_left_prevented_count": {
+          "mean": 0.0,
+          "ci_lo": 0.0,
+          "ci_hi": 0.0,
+          "n": 20
+        },
+        "probe_cost_units": {
+          "mean": 1307.7,
+          "ci_lo": 1278.0,
+          "ci_hi": 1339.8,
+          "n": 20
+        },
+        "escaped_outages": {
+          "mean": 12.4,
+          "ci_lo": 11.35,
+          "ci_hi": 13.35,
+          "n": 20
+        }
+      },
+      "AgenticCanary": {
+        "fault_detection_rate": {
+          "mean": 0.9242,
+          "ci_lo": 0.9108,
+          "ci_hi": 0.9392,
+          "n": 20
+        },
+        "semantic_bug_recall": {
+          "mean": 0.94,
+          "ci_lo": 0.9133,
+          "ci_hi": 0.9633,
+          "n": 20
+        },
+        "config_drift_recall": {
+          "mean": 0.93,
+          "ci_lo": 0.9075,
+          "ci_hi": 0.95,
+          "n": 20
+        },
+        "false_rollback_rate": {
+          "mean": 0.09,
+          "ci_lo": 0.06,
+          "ci_hi": 0.1225,
+          "n": 20
+        },
+        "mttd_min": {
+          "mean": 4.4485,
+          "ci_lo": 4.3151,
+          "ci_hi": 4.5593,
+          "n": 20
+        },
+        "mttr_min": {
+          "mean": 10.9225,
+          "ci_lo": 10.3098,
+          "ci_hi": 11.5175,
+          "n": 20
+        },
+        "release_cycle_min": {
+          "mean": 8.1906,
+          "ci_lo": 8.1136,
+          "ci_hi": 8.265,
+          "n": 20
+        },
+        "shift_left_prevented_count": {
+          "mean": 12.45,
+          "ci_lo": 11.95,
+          "ci_hi": 12.95,
+          "n": 20
+        },
+        "probe_cost_units": {
+          "mean": 4856.2375,
+          "ci_lo": 4804.45,
+          "ci_hi": 4906.5,
+          "n": 20
+        },
+        "escaped_outages": {
+          "mean": 3.5,
+          "ci_lo": 2.8,
+          "ci_hi": 4.15,
+          "n": 20
+        }
+      }
+    },
+    "1.0": {
+      "FixedStaging": {
+        "fault_detection_rate": {
+          "mean": 0.1833,
+          "ci_lo": 0.1833,
+          "ci_hi": 0.1833,
+          "n": 20
+        },
+        "semantic_bug_recall": {
+          "mean": 0.7333,
+          "ci_lo": 0.7333,
+          "ci_hi": 0.7333,
+          "n": 20
+        },
+        "config_drift_recall": {
+          "mean": 0.0,
+          "ci_lo": 0.0,
+          "ci_hi": 0.0,
+          "n": 20
+        },
+        "false_rollback_rate": {
+          "mean": 0.0,
+          "ci_lo": 0.0,
+          "ci_hi": 0.0,
+          "n": 20
+        },
+        "mttd_min": {
+          "mean": 0.0,
+          "ci_lo": 0.0,
+          "ci_hi": 0.0,
+          "n": 20
+        },
+        "mttr_min": {
+          "mean": 55.0,
+          "ci_lo": 55.0,
+          "ci_hi": 55.0,
+          "n": 20
+        },
+        "release_cycle_min": {
+          "mean": 47.9338,
+          "ci_lo": 47.7257,
+          "ci_hi": 48.14,
+          "n": 20
+        },
+        "shift_left_prevented_count": {
+          "mean": 0.0,
+          "ci_lo": 0.0,
+          "ci_hi": 0.0,
+          "n": 20
+        },
+        "probe_cost_units": {
+          "mean": 1440.0,
+          "ci_lo": 1440.0,
+          "ci_hi": 1440.0,
+          "n": 20
+        },
+        "escaped_outages": {
+          "mean": 49.0,
+          "ci_lo": 49.0,
+          "ci_hi": 49.0,
+          "n": 20
+        }
+      },
+      "StaticCanary5xxP99": {
+        "fault_detection_rate": {
+          "mean": 0.0317,
+          "ci_lo": 0.0225,
+          "ci_hi": 0.0425,
+          "n": 20
+        },
+        "semantic_bug_recall": {
+          "mean": 0.0,
+          "ci_lo": 0.0,
+          "ci_hi": 0.0,
+          "n": 20
+        },
+        "config_drift_recall": {
+          "mean": 0.0125,
+          "ci_lo": 0.0025,
+          "ci_hi": 0.025,
+          "n": 20
+        },
+        "false_rollback_rate": {
+          "mean": 0.2575,
+          "ci_lo": 0.2175,
+          "ci_hi": 0.295,
+          "n": 20
+        },
+        "mttd_min": {
+          "mean": 7.4783,
+          "ci_lo": 6.2333,
+          "ci_hi": 8.5367,
+          "n": 20
+        },
+        "mttr_min": {
+          "mean": 42.1092,
+          "ci_lo": 40.93,
+          "ci_hi": 43.2708,
+          "n": 20
+        },
+        "release_cycle_min": {
+          "mean": 12.6119,
+          "ci_lo": 12.4769,
+          "ci_hi": 12.7381,
+          "n": 20
+        },
+        "shift_left_prevented_count": {
+          "mean": 0.0,
+          "ci_lo": 0.0,
+          "ci_hi": 0.0,
+          "n": 20
+        },
+        "probe_cost_units": {
+          "mean": 0.0,
+          "ci_lo": 0.0,
+          "ci_hi": 0.0,
+          "n": 20
+        },
+        "escaped_outages": {
+          "mean": 43.2,
+          "ci_lo": 41.65,
+          "ci_hi": 44.75,
+          "n": 20
+        }
+      },
+      "ShadowDiffOnly": {
+        "fault_detection_rate": {
+          "mean": 0.4833,
+          "ci_lo": 0.47,
+          "ci_hi": 0.4975,
+          "n": 20
+        },
+        "semantic_bug_recall": {
+          "mean": 0.85,
+          "ci_lo": 0.8067,
+          "ci_hi": 0.8967,
+          "n": 20
+        },
+        "config_drift_recall": {
+          "mean": 0.8125,
+          "ci_lo": 0.785,
+          "ci_hi": 0.84,
+          "n": 20
+        },
+        "false_rollback_rate": {
+          "mean": 0.535,
+          "ci_lo": 0.4975,
+          "ci_hi": 0.57,
+          "n": 20
+        },
+        "mttd_min": {
+          "mean": 3.5227,
+          "ci_lo": 3.3697,
+          "ci_hi": 3.6757,
+          "n": 20
+        },
+        "mttr_min": {
+          "mean": 16.8342,
+          "ci_lo": 15.9883,
+          "ci_hi": 17.6342,
+          "n": 20
+        },
+        "release_cycle_min": {
+          "mean": 8.965,
+          "ci_lo": 8.82,
+          "ci_hi": 9.1256,
+          "n": 20
+        },
+        "shift_left_prevented_count": {
+          "mean": 0.0,
+          "ci_lo": 0.0,
+          "ci_hi": 0.0,
+          "n": 20
+        },
+        "probe_cost_units": {
+          "mean": 1307.7,
+          "ci_lo": 1278.0,
+          "ci_hi": 1339.8,
+          "n": 20
+        },
+        "escaped_outages": {
+          "mean": 12.4,
+          "ci_lo": 11.35,
+          "ci_hi": 13.35,
+          "n": 20
+        }
+      },
+      "AgenticCanary": {
+        "fault_detection_rate": {
+          "mean": 0.9883,
+          "ci_lo": 0.9833,
+          "ci_hi": 0.9933,
+          "n": 20
+        },
+        "semantic_bug_recall": {
+          "mean": 1.0,
+          "ci_lo": 1.0,
+          "ci_hi": 1.0,
+          "n": 20
+        },
+        "config_drift_recall": {
+          "mean": 0.9975,
+          "ci_lo": 0.9925,
+          "ci_hi": 1.0,
+          "n": 20
+        },
+        "false_rollback_rate": {
+          "mean": 0.09,
+          "ci_lo": 0.06,
+          "ci_hi": 0.1225,
+          "n": 20
+        },
+        "mttd_min": {
+          "mean": 4.1013,
+          "ci_lo": 4.0566,
+          "ci_hi": 4.1412,
+          "n": 20
+        },
+        "mttr_min": {
+          "mean": 7.0838,
+          "ci_lo": 7.0346,
+          "ci_hi": 7.1292,
+          "n": 20
+        },
+        "release_cycle_min": {
+          "mean": 7.6506,
+          "ci_lo": 7.5883,
+          "ci_hi": 7.7147,
+          "n": 20
+        },
+        "shift_left_prevented_count": {
+          "mean": 13.0,
+          "ci_lo": 12.55,
+          "ci_hi": 13.45,
+          "n": 20
+        },
+        "probe_cost_units": {
+          "mean": 4446.6625,
+          "ci_lo": 4405.9875,
+          "ci_hi": 4486.65,
+          "n": 20
+        },
+        "escaped_outages": {
+          "mean": 0.0,
+          "ci_lo": 0.0,
+          "ci_hi": 0.0,
+          "n": 20
+        }
+      }
+    }
+  },
+  "shock_stress": {
+    "0.5": {
+      "StaticCanary5xxP99": {
+        "fault_detection_rate": {
+          "mean": 0.0225,
+          "ci_lo": 0.0158,
+          "ci_hi": 0.0292,
+          "n": 20
+        },
+        "semantic_bug_recall": {
+          "mean": 0.0,
+          "ci_lo": 0.0,
+          "ci_hi": 0.0,
+          "n": 20
+        },
+        "config_drift_recall": {
+          "mean": 0.0025,
+          "ci_lo": 0.0,
+          "ci_hi": 0.0075,
+          "n": 20
+        },
+        "false_rollback_rate": {
+          "mean": 0.0075,
+          "ci_lo": 0.0,
+          "ci_hi": 0.02,
+          "n": 20
+        },
+        "mttd_min": {
+          "mean": 7.95,
+          "ci_lo": 5.9,
+          "ci_hi": 9.875,
+          "n": 20
+        },
+        "mttr_min": {
+          "mean": 53.6608,
+          "ci_lo": 53.1933,
+          "ci_hi": 54.0867,
+          "n": 20
+        },
+        "release_cycle_min": {
+          "mean": 13.9344,
+          "ci_lo": 13.8963,
+          "ci_hi": 13.9731,
+          "n": 20
+        },
+        "shift_left_prevented_count": {
+          "mean": 0.0,
+          "ci_lo": 0.0,
+          "ci_hi": 0.0,
+          "n": 20
+        },
+        "probe_cost_units": {
+          "mean": 0.0,
+          "ci_lo": 0.0,
+          "ci_hi": 0.0,
+          "n": 20
+        },
+        "escaped_outages": {
+          "mean": 58.15,
+          "ci_lo": 57.55,
+          "ci_hi": 58.7,
+          "n": 20
+        }
+      },
+      "ShadowDiffOnly": {
+        "fault_detection_rate": {
+          "mean": 0.5683,
+          "ci_lo": 0.5617,
+          "ci_hi": 0.575,
+          "n": 20
+        },
+        "semantic_bug_recall": {
+          "mean": 0.9733,
+          "ci_lo": 0.9533,
+          "ci_hi": 0.99,
+          "n": 20
+        },
+        "config_drift_recall": {
+          "mean": 0.975,
+          "ci_lo": 0.9575,
+          "ci_hi": 0.99,
+          "n": 20
+        },
+        "false_rollback_rate": {
+          "mean": 0.08,
+          "ci_lo": 0.055,
+          "ci_hi": 0.1025,
+          "n": 20
+        },
+        "mttd_min": {
+          "mean": 3.8382,
+          "ci_lo": 3.6834,
+          "ci_hi": 3.9791,
+          "n": 20
+        },
+        "mttr_min": {
+          "mean": 25.705,
+          "ci_lo": 25.3192,
+          "ci_hi": 26.0633,
+          "n": 20
+        },
+        "release_cycle_min": {
+          "mean": 10.6275,
+          "ci_lo": 10.5381,
+          "ci_hi": 10.7169,
+          "n": 20
+        },
+        "shift_left_prevented_count": {
+          "mean": 0.0,
+          "ci_lo": 0.0,
+          "ci_hi": 0.0,
+          "n": 20
+        },
+        "probe_cost_units": {
+          "mean": 1673.7,
+          "ci_lo": 1656.6,
+          "ci_hi": 1691.4,
+          "n": 20
+        },
+        "escaped_outages": {
+          "mean": 23.5,
+          "ci_lo": 23.05,
+          "ci_hi": 23.95,
+          "n": 20
+        }
+      },
+      "CanaryNoCausal": {
+        "fault_detection_rate": {
+          "mean": 0.8533,
+          "ci_lo": 0.8333,
+          "ci_hi": 0.8708,
+          "n": 20
+        },
+        "semantic_bug_recall": {
+          "mean": 0.91,
+          "ci_lo": 0.8833,
+          "ci_hi": 0.9367,
+          "n": 20
+        },
+        "config_drift_recall": {
+          "mean": 0.9075,
+          "ci_lo": 0.8825,
+          "ci_hi": 0.93,
+          "n": 20
+        },
+        "false_rollback_rate": {
+          "mean": 0.3375,
+          "ci_lo": 0.295,
+          "ci_hi": 0.3825,
+          "n": 20
+        },
+        "mttd_min": {
+          "mean": 4.0378,
+          "ci_lo": 3.9427,
+          "ci_hi": 4.1256,
+          "n": 20
+        },
+        "mttr_min": {
+          "mean": 9.6375,
+          "ci_lo": 9.1225,
+          "ci_hi": 10.1825,
+          "n": 20
+        },
+        "release_cycle_min": {
+          "mean": 8.6344,
+          "ci_lo": 8.5437,
+          "ci_hi": 8.73,
+          "n": 20
+        },
+        "shift_left_prevented_count": {
+          "mean": 0.0,
+          "ci_lo": 0.0,
+          "ci_hi": 0.0,
+          "n": 20
+        },
+        "probe_cost_units": {
+          "mean": 4821.25,
+          "ci_lo": 4747.625,
+          "ci_hi": 4902.0,
+          "n": 20
+        },
+        "escaped_outages": {
+          "mean": 3.25,
+          "ci_lo": 2.55,
+          "ci_hi": 4.0,
+          "n": 20
+        }
+      },
+      "AgenticCanary": {
+        "fault_detection_rate": {
+          "mean": 0.9242,
+          "ci_lo": 0.9108,
+          "ci_hi": 0.9392,
+          "n": 20
+        },
+        "semantic_bug_recall": {
+          "mean": 0.94,
+          "ci_lo": 0.9133,
+          "ci_hi": 0.9633,
+          "n": 20
+        },
+        "config_drift_recall": {
+          "mean": 0.93,
+          "ci_lo": 0.9075,
+          "ci_hi": 0.95,
+          "n": 20
+        },
+        "false_rollback_rate": {
+          "mean": 0.09,
+          "ci_lo": 0.06,
+          "ci_hi": 0.1225,
+          "n": 20
+        },
+        "mttd_min": {
+          "mean": 4.4485,
+          "ci_lo": 4.3151,
+          "ci_hi": 4.5593,
+          "n": 20
+        },
+        "mttr_min": {
+          "mean": 10.9225,
+          "ci_lo": 10.3098,
+          "ci_hi": 11.5175,
+          "n": 20
+        },
+        "release_cycle_min": {
+          "mean": 8.1906,
+          "ci_lo": 8.1136,
+          "ci_hi": 8.265,
+          "n": 20
+        },
+        "shift_left_prevented_count": {
+          "mean": 12.45,
+          "ci_lo": 11.95,
+          "ci_hi": 12.95,
+          "n": 20
+        },
+        "probe_cost_units": {
+          "mean": 4856.2375,
+          "ci_lo": 4804.45,
+          "ci_hi": 4906.5,
+          "n": 20
+        },
+        "escaped_outages": {
+          "mean": 3.5,
+          "ci_lo": 2.8,
+          "ci_hi": 4.15,
+          "n": 20
+        }
+      }
+    },
+    "1.0": {
+      "StaticCanary5xxP99": {
+        "fault_detection_rate": {
+          "mean": 0.0317,
+          "ci_lo": 0.0225,
+          "ci_hi": 0.0425,
+          "n": 20
+        },
+        "semantic_bug_recall": {
+          "mean": 0.0,
+          "ci_lo": 0.0,
+          "ci_hi": 0.0,
+          "n": 20
+        },
+        "config_drift_recall": {
+          "mean": 0.0125,
+          "ci_lo": 0.0025,
+          "ci_hi": 0.025,
+          "n": 20
+        },
+        "false_rollback_rate": {
+          "mean": 0.2575,
+          "ci_lo": 0.2175,
+          "ci_hi": 0.295,
+          "n": 20
+        },
+        "mttd_min": {
+          "mean": 7.4783,
+          "ci_lo": 6.2333,
+          "ci_hi": 8.5367,
+          "n": 20
+        },
+        "mttr_min": {
+          "mean": 42.1092,
+          "ci_lo": 40.93,
+          "ci_hi": 43.2708,
+          "n": 20
+        },
+        "release_cycle_min": {
+          "mean": 12.6119,
+          "ci_lo": 12.4769,
+          "ci_hi": 12.7381,
+          "n": 20
+        },
+        "shift_left_prevented_count": {
+          "mean": 0.0,
+          "ci_lo": 0.0,
+          "ci_hi": 0.0,
+          "n": 20
+        },
+        "probe_cost_units": {
+          "mean": 0.0,
+          "ci_lo": 0.0,
+          "ci_hi": 0.0,
+          "n": 20
+        },
+        "escaped_outages": {
+          "mean": 43.2,
+          "ci_lo": 41.65,
+          "ci_hi": 44.75,
+          "n": 20
+        }
+      },
+      "ShadowDiffOnly": {
+        "fault_detection_rate": {
+          "mean": 0.4833,
+          "ci_lo": 0.47,
+          "ci_hi": 0.4975,
+          "n": 20
+        },
+        "semantic_bug_recall": {
+          "mean": 0.85,
+          "ci_lo": 0.8067,
+          "ci_hi": 0.8967,
+          "n": 20
+        },
+        "config_drift_recall": {
+          "mean": 0.8125,
+          "ci_lo": 0.785,
+          "ci_hi": 0.84,
+          "n": 20
+        },
+        "false_rollback_rate": {
+          "mean": 0.535,
+          "ci_lo": 0.4975,
+          "ci_hi": 0.57,
+          "n": 20
+        },
+        "mttd_min": {
+          "mean": 3.5227,
+          "ci_lo": 3.3697,
+          "ci_hi": 3.6757,
+          "n": 20
+        },
+        "mttr_min": {
+          "mean": 16.8342,
+          "ci_lo": 15.9883,
+          "ci_hi": 17.6342,
+          "n": 20
+        },
+        "release_cycle_min": {
+          "mean": 8.965,
+          "ci_lo": 8.82,
+          "ci_hi": 9.1256,
+          "n": 20
+        },
+        "shift_left_prevented_count": {
+          "mean": 0.0,
+          "ci_lo": 0.0,
+          "ci_hi": 0.0,
+          "n": 20
+        },
+        "probe_cost_units": {
+          "mean": 1307.7,
+          "ci_lo": 1278.0,
+          "ci_hi": 1339.8,
+          "n": 20
+        },
+        "escaped_outages": {
+          "mean": 12.4,
+          "ci_lo": 11.35,
+          "ci_hi": 13.35,
+          "n": 20
+        }
+      },
+      "CanaryNoCausal": {
+        "fault_detection_rate": {
+          "mean": 0.7342,
+          "ci_lo": 0.7133,
+          "ci_hi": 0.7583,
+          "n": 20
+        },
+        "semantic_bug_recall": {
+          "mean": 0.8733,
+          "ci_lo": 0.84,
+          "ci_hi": 0.9067,
+          "n": 20
+        },
+        "config_drift_recall": {
+          "mean": 0.8575,
+          "ci_lo": 0.83,
+          "ci_hi": 0.8825,
+          "n": 20
+        },
+        "false_rollback_rate": {
+          "mean": 0.6075,
+          "ci_lo": 0.575,
+          "ci_hi": 0.6375,
+          "n": 20
+        },
+        "mttd_min": {
+          "mean": 3.7098,
+          "ci_lo": 3.6054,
+          "ci_hi": 3.8025,
+          "n": 20
+        },
+        "mttr_min": {
+          "mean": 8.1667,
+          "ci_lo": 7.7408,
+          "ci_hi": 8.6567,
+          "n": 20
+        },
+        "release_cycle_min": {
+          "mean": 7.8187,
+          "ci_lo": 7.7,
+          "ci_hi": 7.9419,
+          "n": 20
+        },
+        "shift_left_prevented_count": {
+          "mean": 0.0,
+          "ci_lo": 0.0,
+          "ci_hi": 0.0,
+          "n": 20
+        },
+        "probe_cost_units": {
+          "mean": 4147.9375,
+          "ci_lo": 4055.3125,
+          "ci_hi": 4246.5,
+          "n": 20
+        },
+        "escaped_outages": {
+          "mean": 1.8,
+          "ci_lo": 1.25,
+          "ci_hi": 2.4,
+          "n": 20
+        }
+      },
+      "AgenticCanary": {
+        "fault_detection_rate": {
+          "mean": 0.9242,
+          "ci_lo": 0.9108,
+          "ci_hi": 0.9392,
+          "n": 20
+        },
+        "semantic_bug_recall": {
+          "mean": 0.94,
+          "ci_lo": 0.9133,
+          "ci_hi": 0.9633,
+          "n": 20
+        },
+        "config_drift_recall": {
+          "mean": 0.93,
+          "ci_lo": 0.9075,
+          "ci_hi": 0.95,
+          "n": 20
+        },
+        "false_rollback_rate": {
+          "mean": 0.09,
+          "ci_lo": 0.06,
+          "ci_hi": 0.1225,
+          "n": 20
+        },
+        "mttd_min": {
+          "mean": 4.4485,
+          "ci_lo": 4.3151,
+          "ci_hi": 4.5593,
+          "n": 20
+        },
+        "mttr_min": {
+          "mean": 10.9225,
+          "ci_lo": 10.3098,
+          "ci_hi": 11.5175,
+          "n": 20
+        },
+        "release_cycle_min": {
+          "mean": 8.1906,
+          "ci_lo": 8.1136,
+          "ci_hi": 8.265,
+          "n": 20
+        },
+        "shift_left_prevented_count": {
+          "mean": 12.45,
+          "ci_lo": 11.95,
+          "ci_hi": 12.95,
+          "n": 20
+        },
+        "probe_cost_units": {
+          "mean": 4856.2375,
+          "ci_lo": 4804.45,
+          "ci_hi": 4906.5,
+          "n": 20
+        },
+        "escaped_outages": {
+          "mean": 3.5,
+          "ci_lo": 2.8,
+          "ci_hi": 4.15,
+          "n": 20
+        }
+      }
+    },
+    "1.5": {
+      "StaticCanary5xxP99": {
+        "fault_detection_rate": {
+          "mean": 0.0225,
+          "ci_lo": 0.0142,
+          "ci_hi": 0.0308,
+          "n": 20
+        },
+        "semantic_bug_recall": {
+          "mean": 0.0,
+          "ci_lo": 0.0,
+          "ci_hi": 0.0,
+          "n": 20
+        },
+        "config_drift_recall": {
+          "mean": 0.0125,
+          "ci_lo": 0.005,
+          "ci_hi": 0.0225,
+          "n": 20
+        },
+        "false_rollback_rate": {
+          "mean": 0.415,
+          "ci_lo": 0.3775,
+          "ci_hi": 0.4575,
+          "n": 20
+        },
+        "mttd_min": {
+          "mean": 5.8,
+          "ci_lo": 3.9,
+          "ci_hi": 7.575,
+          "n": 20
+        },
+        "mttr_min": {
+          "mean": 33.8817,
+          "ci_lo": 32.63,
+          "ci_hi": 35.1633,
+          "n": 20
+        },
+        "release_cycle_min": {
+          "mean": 11.5188,
+          "ci_lo": 11.3275,
+          "ci_hi": 11.71,
+          "n": 20
+        },
+        "shift_left_prevented_count": {
+          "mean": 0.0,
+          "ci_lo": 0.0,
+          "ci_hi": 0.0,
+          "n": 20
+        },
+        "probe_cost_units": {
+          "mean": 0.0,
+          "ci_lo": 0.0,
+          "ci_hi": 0.0,
+          "n": 20
+        },
+        "escaped_outages": {
+          "mean": 32.75,
+          "ci_lo": 31.15,
+          "ci_hi": 34.35,
+          "n": 20
+        }
+      },
+      "ShadowDiffOnly": {
+        "fault_detection_rate": {
+          "mean": 0.4617,
+          "ci_lo": 0.4475,
+          "ci_hi": 0.4758,
+          "n": 20
+        },
+        "semantic_bug_recall": {
+          "mean": 0.8033,
+          "ci_lo": 0.7567,
+          "ci_hi": 0.85,
+          "n": 20
+        },
+        "config_drift_recall": {
+          "mean": 0.7825,
+          "ci_lo": 0.7575,
+          "ci_hi": 0.81,
+          "n": 20
+        },
+        "false_rollback_rate": {
+          "mean": 0.5925,
+          "ci_lo": 0.56,
+          "ci_hi": 0.6225,
+          "n": 20
+        },
+        "mttd_min": {
+          "mean": 3.4459,
+          "ci_lo": 3.2884,
+          "ci_hi": 3.6041,
+          "n": 20
+        },
+        "mttr_min": {
+          "mean": 15.2817,
+          "ci_lo": 14.415,
+          "ci_hi": 16.1558,
+          "n": 20
+        },
+        "release_cycle_min": {
+          "mean": 8.7,
+          "ci_lo": 8.55,
+          "ci_hi": 8.8731,
+          "n": 20
+        },
+        "shift_left_prevented_count": {
+          "mean": 0.0,
+          "ci_lo": 0.0,
+          "ci_hi": 0.0,
+          "n": 20
+        },
+        "probe_cost_units": {
+          "mean": 1249.2,
+          "ci_lo": 1218.6,
+          "ci_hi": 1284.0,
+          "n": 20
+        },
+        "escaped_outages": {
+          "mean": 10.5,
+          "ci_lo": 9.45,
+          "ci_hi": 11.5,
+          "n": 20
+        }
+      },
+      "CanaryNoCausal": {
+        "fault_detection_rate": {
+          "mean": 0.71,
+          "ci_lo": 0.69,
+          "ci_hi": 0.7342,
+          "n": 20
+        },
+        "semantic_bug_recall": {
+          "mean": 0.8633,
+          "ci_lo": 0.83,
+          "ci_hi": 0.9,
+          "n": 20
+        },
+        "config_drift_recall": {
+          "mean": 0.8475,
+          "ci_lo": 0.8225,
+          "ci_hi": 0.87,
+          "n": 20
+        },
+        "false_rollback_rate": {
+          "mean": 0.6125,
+          "ci_lo": 0.5775,
+          "ci_hi": 0.6425,
+          "n": 20
+        },
+        "mttd_min": {
+          "mean": 3.6427,
+          "ci_lo": 3.532,
+          "ci_hi": 3.7414,
+          "n": 20
+        },
+        "mttr_min": {
+          "mean": 8.1458,
+          "ci_lo": 7.7167,
+          "ci_hi": 8.6325,
+          "n": 20
+        },
+        "release_cycle_min": {
+          "mean": 7.7919,
+          "ci_lo": 7.6731,
+          "ci_hi": 7.9181,
+          "n": 20
+        },
+        "shift_left_prevented_count": {
+          "mean": 0.0,
+          "ci_lo": 0.0,
+          "ci_hi": 0.0,
+          "n": 20
+        },
+        "probe_cost_units": {
+          "mean": 4126.5625,
+          "ci_lo": 4033.9375,
+          "ci_hi": 4226.3125,
+          "n": 20
+        },
+        "escaped_outages": {
+          "mean": 1.8,
+          "ci_lo": 1.25,
+          "ci_hi": 2.4,
+          "n": 20
+        }
+      },
+      "AgenticCanary": {
+        "fault_detection_rate": {
+          "mean": 0.9242,
+          "ci_lo": 0.9108,
+          "ci_hi": 0.9392,
+          "n": 20
+        },
+        "semantic_bug_recall": {
+          "mean": 0.94,
+          "ci_lo": 0.9133,
+          "ci_hi": 0.9633,
+          "n": 20
+        },
+        "config_drift_recall": {
+          "mean": 0.93,
+          "ci_lo": 0.9075,
+          "ci_hi": 0.95,
+          "n": 20
+        },
+        "false_rollback_rate": {
+          "mean": 0.09,
+          "ci_lo": 0.06,
+          "ci_hi": 0.1225,
+          "n": 20
+        },
+        "mttd_min": {
+          "mean": 4.4485,
+          "ci_lo": 4.3151,
+          "ci_hi": 4.5593,
+          "n": 20
+        },
+        "mttr_min": {
+          "mean": 10.9225,
+          "ci_lo": 10.3098,
+          "ci_hi": 11.5175,
+          "n": 20
+        },
+        "release_cycle_min": {
+          "mean": 8.1906,
+          "ci_lo": 8.1136,
+          "ci_hi": 8.265,
+          "n": 20
+        },
+        "shift_left_prevented_count": {
+          "mean": 12.45,
+          "ci_lo": 11.95,
+          "ci_hi": 12.95,
+          "n": 20
+        },
+        "probe_cost_units": {
+          "mean": 4856.2375,
+          "ci_lo": 4804.45,
+          "ci_hi": 4906.5,
+          "n": 20
+        },
+        "escaped_outages": {
+          "mean": 3.5,
+          "ci_lo": 2.8,
+          "ci_hi": 4.15,
+          "n": 20
+        }
+      }
+    },
+    "2.0": {
+      "StaticCanary5xxP99": {
+        "fault_detection_rate": {
+          "mean": 0.0133,
+          "ci_lo": 0.0058,
+          "ci_hi": 0.0225,
+          "n": 20
+        },
+        "semantic_bug_recall": {
+          "mean": 0.0,
+          "ci_lo": 0.0,
+          "ci_hi": 0.0,
+          "n": 20
+        },
+        "config_drift_recall": {
+          "mean": 0.0075,
+          "ci_lo": 0.0,
+          "ci_hi": 0.015,
+          "n": 20
+        },
+        "false_rollback_rate": {
+          "mean": 0.505,
+          "ci_lo": 0.47,
+          "ci_hi": 0.54,
+          "n": 20
+        },
+        "mttd_min": {
+          "mean": 3.3917,
+          "ci_lo": 1.7167,
+          "ci_hi": 5.1,
+          "n": 20
+        },
+        "mttr_min": {
+          "mean": 29.5383,
+          "ci_lo": 28.3267,
+          "ci_hi": 30.65,
+          "n": 20
+        },
+        "release_cycle_min": {
+          "mean": 10.94,
+          "ci_lo": 10.7656,
+          "ci_hi": 11.1062,
+          "n": 20
+        },
+        "shift_left_prevented_count": {
+          "mean": 0.0,
+          "ci_lo": 0.0,
+          "ci_hi": 0.0,
+          "n": 20
+        },
+        "probe_cost_units": {
+          "mean": 0.0,
+          "ci_lo": 0.0,
+          "ci_hi": 0.0,
+          "n": 20
+        },
+        "escaped_outages": {
+          "mean": 27.25,
+          "ci_lo": 25.7,
+          "ci_hi": 28.7,
+          "n": 20
+        }
+      },
+      "ShadowDiffOnly": {
+        "fault_detection_rate": {
+          "mean": 0.46,
+          "ci_lo": 0.4458,
+          "ci_hi": 0.475,
+          "n": 20
+        },
+        "semantic_bug_recall": {
+          "mean": 0.8,
+          "ci_lo": 0.7533,
+          "ci_hi": 0.8433,
+          "n": 20
+        },
+        "config_drift_recall": {
+          "mean": 0.78,
+          "ci_lo": 0.755,
+          "ci_hi": 0.8075,
+          "n": 20
+        },
+        "false_rollback_rate": {
+          "mean": 0.5925,
+          "ci_lo": 0.56,
+          "ci_hi": 0.6225,
+          "n": 20
+        },
+        "mttd_min": {
+          "mean": 3.4472,
+          "ci_lo": 3.2898,
+          "ci_hi": 3.6047,
+          "n": 20
+        },
+        "mttr_min": {
+          "mean": 15.28,
+          "ci_lo": 14.4117,
+          "ci_hi": 16.1517,
+          "n": 20
+        },
+        "release_cycle_min": {
+          "mean": 8.6987,
+          "ci_lo": 8.5475,
+          "ci_hi": 8.8719,
+          "n": 20
+        },
+        "shift_left_prevented_count": {
+          "mean": 0.0,
+          "ci_lo": 0.0,
+          "ci_hi": 0.0,
+          "n": 20
+        },
+        "probe_cost_units": {
+          "mean": 1248.9,
+          "ci_lo": 1218.3,
+          "ci_hi": 1284.0,
+          "n": 20
+        },
+        "escaped_outages": {
+          "mean": 10.5,
+          "ci_lo": 9.45,
+          "ci_hi": 11.5,
+          "n": 20
+        }
+      },
+      "CanaryNoCausal": {
+        "fault_detection_rate": {
+          "mean": 0.6925,
+          "ci_lo": 0.6717,
+          "ci_hi": 0.715,
+          "n": 20
+        },
+        "semantic_bug_recall": {
+          "mean": 0.84,
+          "ci_lo": 0.7933,
+          "ci_hi": 0.8833,
+          "n": 20
+        },
+        "config_drift_recall": {
+          "mean": 0.83,
+          "ci_lo": 0.805,
+          "ci_hi": 0.855,
+          "n": 20
+        },
+        "false_rollback_rate": {
+          "mean": 0.6125,
+          "ci_lo": 0.5775,
+          "ci_hi": 0.6425,
+          "n": 20
+        },
+        "mttd_min": {
+          "mean": 3.6425,
+          "ci_lo": 3.5245,
+          "ci_hi": 3.7518,
+          "n": 20
+        },
+        "mttr_min": {
+          "mean": 8.1458,
+          "ci_lo": 7.7167,
+          "ci_hi": 8.6325,
+          "n": 20
+        },
+        "release_cycle_min": {
+          "mean": 7.7919,
+          "ci_lo": 7.6731,
+          "ci_hi": 7.9181,
+          "n": 20
+        },
+        "shift_left_prevented_count": {
+          "mean": 0.0,
+          "ci_lo": 0.0,
+          "ci_hi": 0.0,
+          "n": 20
+        },
+        "probe_cost_units": {
+          "mean": 4126.5625,
+          "ci_lo": 4033.9375,
+          "ci_hi": 4226.3125,
+          "n": 20
+        },
+        "escaped_outages": {
+          "mean": 1.8,
+          "ci_lo": 1.25,
+          "ci_hi": 2.4,
+          "n": 20
+        }
+      },
+      "AgenticCanary": {
+        "fault_detection_rate": {
+          "mean": 0.9242,
+          "ci_lo": 0.9108,
+          "ci_hi": 0.9392,
+          "n": 20
+        },
+        "semantic_bug_recall": {
+          "mean": 0.94,
+          "ci_lo": 0.9133,
+          "ci_hi": 0.9633,
+          "n": 20
+        },
+        "config_drift_recall": {
+          "mean": 0.93,
+          "ci_lo": 0.9075,
+          "ci_hi": 0.95,
+          "n": 20
+        },
+        "false_rollback_rate": {
+          "mean": 0.09,
+          "ci_lo": 0.06,
+          "ci_hi": 0.1225,
+          "n": 20
+        },
+        "mttd_min": {
+          "mean": 4.4485,
+          "ci_lo": 4.3151,
+          "ci_hi": 4.5593,
+          "n": 20
+        },
+        "mttr_min": {
+          "mean": 10.9225,
+          "ci_lo": 10.3098,
+          "ci_hi": 11.5175,
+          "n": 20
+        },
+        "release_cycle_min": {
+          "mean": 8.1906,
+          "ci_lo": 8.1136,
+          "ci_hi": 8.265,
+          "n": 20
+        },
+        "shift_left_prevented_count": {
+          "mean": 12.45,
+          "ci_lo": 11.95,
+          "ci_hi": 12.95,
+          "n": 20
+        },
+        "probe_cost_units": {
+          "mean": 4856.2375,
+          "ci_lo": 4804.45,
+          "ci_hi": 4906.5,
+          "n": 20
+        },
+        "escaped_outages": {
+          "mean": 3.5,
+          "ci_lo": 2.8,
+          "ci_hi": 4.15,
+          "n": 20
+        }
+      }
+    }
+  }
+}

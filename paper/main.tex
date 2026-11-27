@@ -1,0 +1,45 @@
+\documentclass[conference]{IEEEtran}
+\IEEEoverridecommandlockouts
+
+\usepackage{cite}
+\usepackage{amsmath,amssymb,amsfonts}
+\usepackage{graphicx}
+\usepackage{textcomp}
+\usepackage{xcolor}
+\usepackage{booktabs}
+\usepackage{hyperref}
+
+\input{generated/numbers.tex}
+
+\begin{document}
+
+\title{Staging Is Dead, Long Live Agentic Canaries: Change-Aware Synthetic Probing and Causal Auto-Rollback for Safe Testing in Production}
+
+\author{\IEEEauthorblockN{Jincheng Ma}
+\IEEEauthorblockA{\textit{Independent Researcher}\\
+San Francisco Bay Area, CA, USA}
+}
+
+\maketitle
+
+\begin{abstract}
+Shared staging environments create a false sense of release safety: their traffic distributions, regional configuration overlays, and downstream dependency topologies diverge permanently from production while imposing severe pre-deploy queueing bottlenecks. Yet replacing staging with naive production canary monitors fails equally---global HTTP 5xx and P99 latency alarms miss HTTP-200 semantic payload corruptions and single-region configuration drift while triggering frequent false rollbacks during regional traffic shocks.
+
+We present \textbf{AgenticCanary}, an end-to-end change-aware progressive production verification architecture combining four mechanisms: (1) pre-deploy \emph{blast-radius and regional config/flag contract extraction}, (2) \emph{targeted synthetic probing and shadow semantic diffing} over affected service--region--flag slices, (3) high-cardinality \emph{Difference-in-Differences (DiD) causal auto-rollback} comparing canary against baseline cohorts to suppress traffic-shock false alarms, and (4) causal \emph{shift-right-to-shift-left rule mining} that converts confirmed production rollbacks into pre-deploy guardrails for recurring fault classes. Across \TotalSealedRuns{} SHA-256-sealed suites totaling \TotalSimReleases{} simulated multi-region releases (12 cloud microservices, 6 regions, $85\%$ decoupled blast-graph recall), \textbf{AgenticCanary} achieves \ACDetPct{}\% fault detection (\ACSemPct{}\% HTTP-200 semantic recall, \ACDriftPct{}\% regional config-drift recall) with \ACFalseRollPct{}\% false rollback and an \ACCycleMin{}-minute release cycle---\CycleSpeedupVsStaging{}$\times$ faster than fixed staging (\StagingCycleMin{}~min, \StagingDetPct{}\% detection, Holm-adjusted Wilcoxon $p\HolmPDetVsStaging{}$), far surpassing static 5xx/P99 canaries (\StaticCanaryDetPct{}\% detection, $p\HolmPDetVsStatic{}$), and slashing false rollbacks by more than $6\times$ versus non-causal canaries (\NoCausalFalseRollPct{}\%, $p\HolmPFRVsNoCausal{}$).
+\end{abstract}
+
+\begin{IEEEkeywords}
+Testing in Production, Canary Analysis, Progressive Delivery, Feature Flags, Observability, Causal Auto-Rollback
+\end{IEEEkeywords}
+
+\input{sections/01_introduction.tex}
+\input{sections/02_methodology.tex}
+\input{sections/03_evaluation.tex}
+\input{sections/04_related_work.tex}
+\input{sections/05_discussion_conclusion.tex}
+\input{sections/ai_disclosure.tex}
+
+\bibliographystyle{IEEEtran}
+\bibliography{../literature/refs}
+
+\end{document}

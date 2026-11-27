@@ -1,0 +1,16 @@
+\section{Introduction}
+\label{sec:intro}
+
+Modern cloud-native applications evolve through continuous progressive delivery across distributed microservice graphs and multi-region deployments~\cite{bates2021software,chen2023microservice,palvai2026developing}. Traditional quality engineering relies on shared pre-production staging environments to gate releases before production exposure. However, empirical studies of microservice failures demonstrate that configuration drift, regional feature-flag combinations, and production-scale load distributions routinely escape staging while staging queues slow release velocity~\cite{laigner2026empirical,jayalath2024microservice,mahdavihezaveh2021software,mahdavihezaveh2022feature}.
+
+Transitioning directly to testing in production introduces a dual verification hazard. First, static canary monitors tracking coarse global HTTP 5xx error rates and P99 latency are blind to HTTP-200 semantic regressions (corrupted pricing, ledger, or checkout payloads) and to regional configuration faults diluted across global traffic~\cite{yu2023nezha,shi2026conceptual}. Second, aggressive anomaly thresholds without causal baseline-vs-canary isolation trigger high false-rollback rates whenever regional traffic surges or noisy neighbors perturb production metrics~\cite{sikha2023playbook,sirikonda2026reducing}.
+
+We propose \textbf{AgenticCanary}, a change-aware autonomous production verification loop that replaces brittle staging suites with four integrated stages:
+\begin{enumerate}
+    \item \textbf{Pre-Deploy Blast-Radius \& Config-Overlay Contract Extraction}: Analyzes each release's service, operation, and regional feature-flag manifest to enumerate the minimal set of affected `(service, region, flag)` verification slices~\cite{chen2021cipc,chen2023microservice}.
+    \item \textbf{Targeted Synthetic Probing \& Shadow Semantic Diffing}: Dispatches read-only synthetic probes and differential shadow comparisons strictly against impacted slices, catching HTTP-200 payload corruptions and regional config drift within minutes.
+    \item \textbf{High-Cardinality DiD Causal Auto-Rollback}: Isolates release-induced regressions from exogenous regional traffic shocks by comparing canary and baseline telemetry deltas across matching `(service, region, flag)` cohorts.
+    \item \textbf{Causal Shift-Right to Shift-Left Memory}: Extracts verified regression fixtures from confirmed production rollbacks into pre-deploy gates, blocking future recurrences of the same fault class before canary traffic is even exposed.
+\end{enumerate}
+
+We evaluate AgenticCanary across \TotalSealedRuns{} SHA-256-sealed suites (\TotalSealedRecords{} run records, \TotalSimReleases{} simulated releases) on a 12-service, 6-region fault-injection testbed with decoupled blast-graph visibility ($50\%$--$100\%$ recall), exogenous traffic-shock sweeps, and paired Wilcoxon tests with Holm-Bonferroni correction.

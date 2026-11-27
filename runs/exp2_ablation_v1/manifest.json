@@ -1,0 +1,50 @@
+{
+  "schema_version": "2.0",
+  "run_id": "exp2_ablation_v1",
+  "experiment": "exp2_ablation",
+  "timestamp_utc": "2026-11-27T02:00:53.488717+00:00",
+  "git_commit": "da22818",
+  "harness_sha256": "7bdc53ff1b3c50eb74baa27109eab4d8267cc0353c40013092a4c442cd7ca614",
+  "dataset_sha256": "fe29a7ebbfe53012fc54c72d441bd8f18c132b08cc952eceee1af581f1bae4bc",
+  "command": "python3 eval/harness.py",
+  "seeds": [
+    3001,
+    3002,
+    3003,
+    3004,
+    3005,
+    3006,
+    3007,
+    3008,
+    3009,
+    3010,
+    3011,
+    3012,
+    3013,
+    3014,
+    3015,
+    3016,
+    3017,
+    3018,
+    3019,
+    3020,
+    3021,
+    3022,
+    3023,
+    3024,
+    3025
+  ],
+  "record_count": 125,
+  "metrics_file": "metrics.json",
+  "metrics_sha256": "eb184a33b7873dc3f552267327fdf032e6206cc0b941e964006b28916129cf62",
+  "artifact_sha256": "eb184a33b7873dc3f552267327fdf032e6206cc0b941e964006b28916129cf62",
+  "meta": {
+    "strategies": [
+      "AgenticCanary",
+      "AgenticCanary-NoBlastGraph",
+      "AgenticCanary-NoShadowProbe",
+      "AgenticCanary-NoCausalDiD",
+      "AgenticCanary-NoShiftLeft"
+    ]
+  }
+}

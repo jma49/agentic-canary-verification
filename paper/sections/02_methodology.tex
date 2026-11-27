@@ -1,0 +1,18 @@
+\section{AgenticCanary Architecture}
+\label{sec:methodology}
+
+\subsection{Pre-Deploy Blast-Radius and Feature-Flag Contracts}
+Each release modifies a target service operation and associated regional feature flags inside a 12-service microservice DAG deployed across six geographic regions (`us-east`, `us-west`, `eu-central`, `ap-south`, `ap-east`, `latam`). Rather than running an exhaustive staging suite or monitoring undifferentiated global traffic, AgenticCanary computes an observed blast cone $\hat{B}(r)$ of `(service, region, flag)` tuples reachable from the modified service and config overlays. To ensure non-circular evaluation, $\hat{B}(r)$ is parameterized by graph recall $\rho \in [0.50, 1.00]$ so that $(1-\rho)$ of true fault cones lie outside $\hat{B}(r)$.
+
+\subsection{Change-Aware Synthetic Probing and Shadow Diffing}
+During progressive rollout, AgenticCanary allocates targeted synthetic API probes and shadow traffic comparisons to slices in $\hat{B}(r)$, complemented by low-overhead sentinel checks across residual regions. Semantic shadow diffing compares structured canary responses against baseline responses on identical shadowed requests, exposing HTTP-200 business logic defects that leave HTTP status codes and latency unchanged.
+
+\subsection{Difference-in-Differences (DiD) Causal Auto-Rollback}
+Regional traffic bursts and downstream contention frequently shift raw canary latency and error distributions even on clean releases. For every monitored slice $s \in \hat{B}(r)$ and telemetry window $t$, AgenticCanary computes a high-cardinality Difference-in-Differences (DiD) contrast between the canary cohort ($C$) and co-located baseline cohort ($B$):
+\begin{equation}
+\Delta_{\text{DiD}}(s, t) = \big(Y_{C}(s,t) - Y_{C}(s, t_0)\big) - \big(Y_{B}(s,t) - Y_{B}(s, t_0)\big).
+\end{equation}
+Auto-rollback triggers only when $\Delta_{\text{DiD}}(s, t)$ exceeds calibrated statistical bounds across consecutive windows, cancelling out exogenous regional load shocks while preserving rapid detection of true release regressions.
+
+\subsection{Causal Shift-Right to Shift-Left Rule Mining}
+Whenever a production rollback confirms a reproducible fault fixture, AgenticCanary mines a compact pre-deploy regression rule keyed to that fault signature. Strictly respecting temporal causality, a mined rule may only evaluate \emph{subsequent} releases in the chronological stream, preventing recurring configuration or contract regressions before deployment.
