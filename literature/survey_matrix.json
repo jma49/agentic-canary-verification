@@ -1,0 +1,316 @@
+[
+  {
+    "source": "openalex",
+    "openalex_id": "https://openalex.org/W7128439300",
+    "doi": "10.63282/3050-9246.ijetcsit-v7i1p105",
+    "title": "Developing End-to-End Concourse CI/CD Pipelines with Automated Testing, Scanning, Canary Deployments, and Rollback Logic",
+    "authors": [
+      "Sneha Palvai",
+      "Vivek Jain"
+    ],
+    "year": 2026,
+    "venue": "International Journal of Emerging Trends in Computer Science and Information Technology",
+    "cited_by_count": 1,
+    "url": "https://doi.org/10.63282/3050-9246.ijetcsit-v7i1p105",
+    "entry_type": "article",
+    "is_preprint": false,
+    "key": "palvai2026developing",
+    "category": "Canary & Progressive Delivery",
+    "evidence_note": "Automated canary analysis and progressive rollout strategies in microservices."
+  },
+  {
+    "source": "openalex",
+    "openalex_id": "https://openalex.org/W4205816147",
+    "doi": "10.1016/j.infsof.2021.106813",
+    "title": "Feature toggles as code: Heuristics and metrics for structuring feature toggles",
+    "authors": [
+      "Rezvan Mahdavi-Hezaveh",
+      "Nirav Ajmeri",
+      "Laurie A. Williams"
+    ],
+    "year": 2022,
+    "venue": "Information and Software Technology",
+    "cited_by_count": 22,
+    "url": "https://doi.org/10.1016/j.infsof.2021.106813",
+    "entry_type": "article",
+    "is_preprint": false,
+    "key": "mahdavihezaveh2022feature",
+    "category": "Testing in Production & Feature Flags",
+    "evidence_note": "Feature flags and safe progressive testing in production pipelines."
+  },
+  {
+    "source": "openalex",
+    "openalex_id": "https://openalex.org/W3011335320",
+    "doi": "10.1007/s10664-020-09901-z",
+    "title": "Software development with feature toggles: practices used by practitioners",
+    "authors": [
+      "Rezvan Mahdavi-Hezaveh",
+      "Jacob Dremann",
+      "Laurie A. Williams"
+    ],
+    "year": 2021,
+    "venue": "Empirical Software Engineering",
+    "cited_by_count": 68,
+    "url": "https://doi.org/10.1007/s10664-020-09901-z",
+    "entry_type": "article",
+    "is_preprint": false,
+    "key": "mahdavihezaveh2021software",
+    "category": "Testing in Production & Feature Flags",
+    "evidence_note": "Feature flags and safe progressive testing in production pipelines."
+  },
+  {
+    "source": "openalex",
+    "openalex_id": "https://openalex.org/W4389158453",
+    "doi": "10.1145/3611643.3616249",
+    "title": "Nezha: Interpretable Fine-Grained Root Causes Analysis for Microservices on Multi-modal Observability Data",
+    "authors": [
+      "Guangba Yu",
+      "Pengfei Chen",
+      "Yufeng Li",
+      "Hongyang Chen",
+      "Xiaoyun Li",
+      "Zibin Zheng"
+    ],
+    "year": 2023,
+    "venue": "ACM Joint European Software Engineering Conference and Symposium on the Foundations of Software Engineering (ESEC/FSE)",
+    "cited_by_count": 237,
+    "url": "https://doi.org/10.1145/3611643.3616249",
+    "entry_type": "inproceedings",
+    "is_preprint": false,
+    "key": "yu2023nezha",
+    "category": "Observability & Causal RCA",
+    "evidence_note": "Distributed trace and metric causal localization in cloud microservices."
+  },
+  {
+    "source": "openalex",
+    "openalex_id": "https://openalex.org/W4285683369",
+    "doi": "10.1145/3531056.3542765",
+    "title": "Large-Scale Trace Analysis for Microservice Anomaly Detection and Root Cause Localization",
+    "authors": [
+      "Xin Peng"
+    ],
+    "year": 2022,
+    "venue": "Federated Africa and Middle East Conference on Software Engineering (FAMECSE)",
+    "cited_by_count": 6,
+    "url": "https://doi.org/10.1145/3531056.3542765",
+    "entry_type": "inproceedings",
+    "is_preprint": false,
+    "key": "peng2022large",
+    "category": "Observability & Causal RCA",
+    "evidence_note": "Distributed trace and metric causal localization in cloud microservices."
+  },
+  {
+    "source": "openalex",
+    "openalex_id": "https://openalex.org/W7223173808",
+    "doi": "10.26855/ea.2026.09.017",
+    "title": "A Conceptual Framework for OpenTelemetry-based Distributed Tracing and Burst Traffic Bottleneck Localization in Complex Microservice Architecture",
+    "authors": [
+      "Chenghao Shi"
+    ],
+    "year": 2026,
+    "venue": "Engineering Advances",
+    "cited_by_count": 0,
+    "url": "https://doi.org/10.26855/ea.2026.09.017",
+    "entry_type": "article",
+    "is_preprint": false,
+    "key": "shi2026conceptual",
+    "category": "Observability & Causal RCA",
+    "evidence_note": "High-cardinality trace anomaly detection for production verification."
+  },
+  {
+    "source": "openalex",
+    "openalex_id": "https://openalex.org/W4410211326",
+    "doi": "10.9734/ajrcos/2025/v18i6675",
+    "title": "AI-Driven Fault Injection Testing: Enhancing System Resilience with Automated Chaos Engineering",
+    "authors": [
+      "Chhaya Gunawat",
+      "Rohit Gupta",
+      "Jay Sunil Nankani"
+    ],
+    "year": 2025,
+    "venue": "Asian Journal of Research in Computer Science",
+    "cited_by_count": 2,
+    "url": "https://doi.org/10.9734/ajrcos/2025/v18i6675",
+    "entry_type": "article",
+    "is_preprint": false,
+    "key": "gunawat2025driven",
+    "category": "Fault Injection & Microservice Testing",
+    "evidence_note": "Fault injection benchmarks and resilience evaluation in cloud-native services."
+  },
+  {
+    "source": "openalex",
+    "openalex_id": "https://openalex.org/W7222205279",
+    "doi": "10.17762/jidmis.v3.2748",
+    "title": "Protocol-Aware Chaos Engineering for SWIFT Gpi-Compatible Microservices: A Framework for Five-Nines Cross-Border Payment Resilience",
+    "authors": [
+      "Midhun Michael Nelavala"
+    ],
+    "year": 2026,
+    "venue": "Journal of Intelligent Decision Making and Information Science",
+    "cited_by_count": 5,
+    "url": "https://doi.org/10.17762/jidmis.v3.2748",
+    "entry_type": "article",
+    "is_preprint": false,
+    "key": "nelavala2026protocol",
+    "category": "Fault Injection & Microservice Testing",
+    "evidence_note": "Fault injection benchmarks and resilience evaluation in cloud-native services."
+  },
+  {
+    "source": "openalex",
+    "openalex_id": "https://openalex.org/W4417043383",
+    "doi": "10.1145/3776581",
+    "title": "An Empirical Study on Challenges of Event Management in Microservice Architectures",
+    "authors": [
+      "Rodrigo Laigner",
+      "Ana Carolina Almeida",
+      "Wesley K. G. Assunção",
+      "Yongluan Zhou"
+    ],
+    "year": 2026,
+    "venue": "ACM Transactions on Software Engineering and Methodology",
+    "cited_by_count": 26,
+    "url": "https://doi.org/10.1145/3776581",
+    "entry_type": "article",
+    "is_preprint": false,
+    "key": "laigner2026empirical",
+    "category": "Configuration & Multi-Region Drift",
+    "evidence_note": "Empirical studies of configuration-induced production outages and multi-region drift."
+  },
+  {
+    "source": "openalex",
+    "openalex_id": "https://openalex.org/W4403447112",
+    "doi": "10.1109/access.2024.3481374",
+    "title": "Microservice Vulnerability Analysis: A Literature Review With Empirical Insights",
+    "authors": [
+      "Raveen Kanishka Jayalath",
+      "Hussain Ahmad",
+      "Diksha Goel",
+      "Syed Muhammad Shuja",
+      "Faheem Ullah"
+    ],
+    "year": 2024,
+    "venue": "IEEE Access",
+    "cited_by_count": 52,
+    "url": "https://doi.org/10.1109/access.2024.3481374",
+    "entry_type": "article",
+    "is_preprint": false,
+    "key": "jayalath2024microservice",
+    "category": "Configuration & Multi-Region Drift",
+    "evidence_note": "Empirical studies of configuration-induced production outages and multi-region drift."
+  },
+  {
+    "source": "openalex",
+    "openalex_id": "https://openalex.org/W3217740807",
+    "doi": "10.1155/2021/2912240",
+    "title": "CIPC: A Change Impact Propagation Computing Based Technique for Microservice Regression Testing Prioritization",
+    "authors": [
+      "Lizhe Chen",
+      "Xiang Yu",
+      "Ji Tao Wu",
+      "Haiyan Yang"
+    ],
+    "year": 2021,
+    "venue": "Mobile Information Systems",
+    "cited_by_count": 5,
+    "url": "https://doi.org/10.1155/2021/2912240",
+    "entry_type": "article",
+    "is_preprint": false,
+    "key": "chen2021cipc",
+    "category": "Change-Aware Verification",
+    "evidence_note": "Change-aware impact analysis for targeted verification of service modifications."
+  },
+  {
+    "source": "openalex",
+    "openalex_id": "https://openalex.org/W4320497337",
+    "doi": "10.1186/s13677-023-00398-7",
+    "title": "A microservice regression testing selection approach based on belief propagation",
+    "authors": [
+      "Li-zhe Chen",
+      "Ji Tao Wu",
+      "Haiyan Yang",
+      "Kui Zhang"
+    ],
+    "year": 2023,
+    "venue": "Journal of Cloud Computing Advances Systems and Applications",
+    "cited_by_count": 17,
+    "url": "https://doi.org/10.1186/s13677-023-00398-7",
+    "entry_type": "article",
+    "is_preprint": false,
+    "key": "chen2023microservice",
+    "category": "Change-Aware Verification",
+    "evidence_note": "Change-aware impact analysis for targeted verification of service modifications."
+  },
+  {
+    "source": "openalex",
+    "openalex_id": "https://openalex.org/W7142607248",
+    "doi": "10.58425/ajt.v5i3.511",
+    "title": "Reducing SRE Toil via Safe Autonomous Remediation in Cloud-Native Systems",
+    "authors": [
+      "Sathwik Rao Sirikonda"
+    ],
+    "year": 2026,
+    "venue": "American Journal of Technology",
+    "cited_by_count": 13,
+    "url": "https://doi.org/10.58425/ajt.v5i3.511",
+    "entry_type": "article",
+    "is_preprint": false,
+    "key": "sirikonda2026reducing",
+    "category": "Automated Rollback & Self-Healing",
+    "evidence_note": "Automated causal rollback and incident mitigation in large-scale cloud services."
+  },
+  {
+    "source": "openalex",
+    "openalex_id": "https://openalex.org/W4402095265",
+    "doi": "10.47363/jaicc/2023(2)e136",
+    "title": "The SRE Playbook: Multi-Cloud Observability, Security, and Automation",
+    "authors": [
+      "Vijay Kartik Sikha"
+    ],
+    "year": 2023,
+    "venue": "Journal of Artificial Intelligence & Cloud Computing",
+    "cited_by_count": 24,
+    "url": "https://doi.org/10.47363/jaicc/2023(2)e136",
+    "entry_type": "article",
+    "is_preprint": false,
+    "key": "sikha2023playbook",
+    "category": "Automated Rollback & Self-Healing",
+    "evidence_note": "Automated causal rollback and incident mitigation in large-scale cloud services."
+  },
+  {
+    "source": "openalex",
+    "openalex_id": "https://openalex.org/W7171155401",
+    "doi": "10.67228/30713315/ijaidt-2018pi1c3h",
+    "title": "AI-Powered Continuous Verification Pipelines for DevOps",
+    "authors": [
+      "Lei Weing"
+    ],
+    "year": 2018,
+    "venue": "International Journal of Artificial Intelligence & Digital Transformation",
+    "cited_by_count": 0,
+    "url": "https://doi.org/10.67228/30713315/ijaidt-2018pi1c3h",
+    "entry_type": "article",
+    "is_preprint": false,
+    "key": "weing2018powered",
+    "category": "Continuous Verification",
+    "evidence_note": "End-to-end continuous verification across deployment stages."
+  },
+  {
+    "source": "openalex",
+    "openalex_id": "https://openalex.org/W3215325729",
+    "doi": "10.1109/rams48097.2021.9605768",
+    "title": "Software Reliability in a DevOps Continuous Integration Environment",
+    "authors": [
+      "Mary lLisar Williams Bates",
+      "Enrique I. Oviedo"
+    ],
+    "year": 2021,
+    "venue": "Annual Reliability and Maintainability Symposium (RAMS)",
+    "cited_by_count": 8,
+    "url": "https://doi.org/10.1109/rams48097.2021.9605768",
+    "entry_type": "inproceedings",
+    "is_preprint": false,
+    "key": "bates2021software",
+    "category": "Continuous Verification",
+    "evidence_note": "End-to-end continuous verification across deployment stages."
+  }
+]

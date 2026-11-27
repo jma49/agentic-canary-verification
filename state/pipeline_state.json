@@ -1,0 +1,31 @@
+{
+  "topic_slug": "agentic-canary-verification",
+  "title": "Staging Is Dead, Long Live Agentic Canaries: Change-Aware Synthetic Probing and Causal Auto-Rollback for Safe Testing in Production",
+  "target_venue": "FSE / ICSE / IEEE ISSRE (IEEEtran)",
+  "created_utc": "2026-11-27T01:48:53.011247+00:00",
+  "current_stage": "STAGE_1_PLAN_AND_SCOUT",
+  "gates": {
+    "G1_PLAN_FREEZE": {
+      "status": "pending",
+      "approved_by": null,
+      "approved_at": null
+    },
+    "G2_RESULTS_AUDIT": {
+      "status": "pending",
+      "approved_by": null,
+      "approved_at": null
+    },
+    "G3_REVIEW_DECISION": {
+      "status": "pending",
+      "approved_by": null,
+      "approved_at": null
+    },
+    "G4_SUBMISSION_COMPLIANCE": {
+      "status": "pending",
+      "approved_by": null,
+      "approved_at": null
+    }
+  },
+  "revision_rounds": 0,
+  "max_revision_rounds": 3
+}
